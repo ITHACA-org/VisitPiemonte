@@ -1,7 +1,7 @@
 //------ SET BASE MAP FEATURES -------------------------------------------------------------------------------------
 var map = new maplibregl.Map({
     container: 'map', // container id
-    style: 'https://api.maptiler.com/maps/hybrid/style.json?key=get_your_own_OpIi9ZULNHzrESv6T2vL', // style URL
+    style: 'https://api.maptiler.com/maps/hybrid/style.json?key=IufzbVf2iFVM9b8V7su4', // style URL
     center: [7.36067, 44.90823], // starting position [lng, lat]
     zoom: 8, // starting zoom
     attributionControl: false,
