@@ -6,3 +6,135 @@ html, body {
 #map {
     height: 100%;
 }
+
+/* -------------MAPLIBRE-POPUP------------------------------------------------- */
+
+.maplibregl-popup-close-button {
+  display: None;
+  }
+
+/*------------ SIDEBAR----------------------------------- */
+.rounded-rect {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 50px -25px black;
+}
+.flex-center {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-center.left {
+  left: 0px;
+}
+.flex-center.right {
+  right: 0px;
+}
+.sidebar-content {
+  position: absolute;
+  width: 95%;
+  height: 95%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 28px;
+}
+.sidebar-toggle {
+  position: absolute;
+  width: 1.3em;
+  height: 1.3em;
+  overflow: visible;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sidebar-toggle.left {
+  right: -1.5em;
+}
+.sidebar-toggle.right {
+  left: -1.5em;
+}
+.sidebar-toggle:hover {
+  color: #0aa1cf;
+  cursor: pointer;
+}
+.sidebar {
+  transition: transform 1s;
+  z-index: 3;
+  width: 300px;
+  height: 100%;
+}
+/*
+The sidebar styling has them "expanded" by default, we use CSS transforms to push them offscreen
+The toggleSidebar() function removes this class from the element in order to expand it.
+*/
+.left.collapsed {
+  transform: translateX(-295px);
+}
+.right.collapsed {
+  transform: translateX(295px);
+}
+#sidebar_arrow {
+  font-size: 25px;
+}
+
+/* -------------LEGENDA------------- */
+.legend {
+  /* height: 550px; */
+  height: 85%;
+  width: 270px;
+  background-color: #fff;
+  font-size: 0.75rem;
+  /* padding: 10px; */
+  /* position: relative; */
+  position: absolute;
+  z-index: 1;
+  overflow-y: scroll;
+}
+.legend div span {
+  border-radius: 0%;
+  display: inline-block;
+  height: 6px;
+  margin-right: 5px;
+  width: 50px;
+  }
+.legend a:link {
+ color : rgba(0, 0, 0, 0.899);
+ text-decoration: none
+ }
+ .legend a:visited {
+  color : rgba(0, 0, 0, 0.899);
+  text-decoration: none
+  }
+.legend a:hover {
+  color : rgba(34, 21, 210, 0.899);
+  text-decoration: none
+  }
+ 
+/* ---------POST-------------------------------------- */
+.post {
+  background: #fff;
+  margin: 15px 0;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.post h2 {
+  margin: 0 0 10px;
+  font-size: 20px;
+}
+.post p {
+  margin: 0 0 15px;
+  color: #555;
+}
+.post button {
+  background: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.post button:hover {
+  background: #0056b3;
+}
