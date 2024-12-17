@@ -46,6 +46,8 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-style: solid;
+  border-width: 1px;
 }
 .sidebar-toggle.left {
   right: -1.5em;
@@ -97,6 +99,16 @@ The toggleSidebar() function removes this class from the element in order to exp
   margin-right: 5px;
   width: 50px;
   }
+.legend div span.pend {
+  border-radius: 0%;
+  display: inline-block;
+  height: 3px;
+  margin-right: 5px;
+  width: 50px;
+  }
+.legend h4{
+  color: rgba(59, 61, 61, 0.721);
+}
 .legend a:link {
  color : rgba(0, 0, 0, 0.899);
  text-decoration: none
