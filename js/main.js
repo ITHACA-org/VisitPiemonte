@@ -161,19 +161,19 @@ map.on('load', () => {
     map.on("mouseleave", "Ciclovia_22", () => {my_popup.remove()});
     
     //----ONCLIK GO TO PAGES-------------------
-    map.on("click", "Ciclovia_1", () => {window.location.href = "../pages/ciclabili.html#c1"});
-    map.on("click", "Ciclovia_2", () => {window.location.href = "../pages/ciclabili.html#c2"});
-    map.on("click", "Ciclovia_4", () => {window.location.href = "../pages/ciclabili.html#c4"});
-    map.on("click", "Ciclovia_5", () => {window.location.href = "../pages/ciclabili.html#c5"});
-    map.on("click", "Ciclovia_6", () => {window.location.href = "../pages/ciclabili.html#c6"});
-    map.on("click", "Ciclovia_7", () => {window.location.href = "../pages/ciclabili.html#c7"});
-    map.on("click", "Ciclovia_8", () => {window.location.href = "../pages/ciclabili.html#c8"});
-    map.on("click", "Ciclovia_10", () => {window.location.href = "../pages/ciclabili.html#c10"});
-    map.on("click", "Ciclovia_15", () => {window.location.href = "../pages/ciclabili.html#c15"});
-    map.on("click", "Ciclovia_16", () => {window.location.href = "../pages/ciclabili.html#c16"});
-    map.on("click", "Ciclovia_19", () => {window.location.href = "../pages/ciclabili.html#c19"});
-    map.on("click", "Ciclovia_20", () => {window.location.href = "../pages/ciclabili.html#c20"});
-    map.on("click", "Ciclovia_22", () => {window.location.href = "../pages/ciclabili.html#c22"});
+    map.on("click", "Ciclovia_1", () => {window.location.href = "./pages/ciclabili.html#c1"});
+    map.on("click", "Ciclovia_2", () => {window.location.href = "./pages/ciclabili.html#c2"});
+    map.on("click", "Ciclovia_4", () => {window.location.href = "./pages/ciclabili.html#c4"});
+    map.on("click", "Ciclovia_5", () => {window.location.href = "./pages/ciclabili.html#c5"});
+    map.on("click", "Ciclovia_6", () => {window.location.href = "./pages/ciclabili.html#c6"});
+    map.on("click", "Ciclovia_7", () => {window.location.href = "./pages/ciclabili.html#c7"});
+    map.on("click", "Ciclovia_8", () => {window.location.href = "./pages/ciclabili.html#c8"});
+    map.on("click", "Ciclovia_10", () => {window.location.href = "./pages/ciclabili.html#c10"});
+    map.on("click", "Ciclovia_15", () => {window.location.href = "./pages/ciclabili.html#c15"});
+    map.on("click", "Ciclovia_16", () => {window.location.href = "./pages/ciclabili.html#c16"});
+    map.on("click", "Ciclovia_19", () => {window.location.href = "./pages/ciclabili.html#c19"});
+    map.on("click", "Ciclovia_20", () => {window.location.href = "./pages/ciclabili.html#c20"});
+    map.on("click", "Ciclovia_22", () => {window.location.href = "./pages/ciclabili.html#c22"});
 
 
 //--------ON HOVER LEGENDA-------------------------------------------------
