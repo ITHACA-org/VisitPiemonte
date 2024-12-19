@@ -3,7 +3,7 @@
 var map = new maplibregl.Map({
     container: 'map', // container id
     //style: 'https://api.maptiler.com/maps/hybrid/style.json?key=IufzbVf2iFVM9b8V7su4', // style URL
-    style: 'https://api.maptiler.com/maps/aquarelle/style.json?key=IufzbVf2iFVM9b8V7su4',
+    style: 'https://api.maptiler.com/maps/landscape/style.json?key=IufzbVf2iFVM9b8V7su4',
     center: [7.96067, 45.11823], // starting position [lng, lat]
     zoom: 8, // starting zoom
     attributionControl: false,
