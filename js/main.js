@@ -175,7 +175,6 @@ map.on('load', () => {
     map.on("click", "Ciclovia_20", () => {window.location.href = "./pages/ciclabili.html#c20"});
     map.on("click", "Ciclovia_22", () => {window.location.href = "./pages/ciclabili.html#c22"});
 
-
 //--------ON HOVER LEGENDA-------------------------------------------------
     document.getElementById("cicl1").addEventListener("mouseover", evidenzia1);
     document.getElementById("cicl1").addEventListener("mouseleave", disevidenzia1);
