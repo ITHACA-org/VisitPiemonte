@@ -2,11 +2,12 @@
 //------ SET BASE MAP FEATURES -------------------------------------------------------------------------------------
 var map = new maplibregl.Map({
     container: 'map', // container id
-    //style: 'https://api.maptiler.com/maps/hybrid/style.json?key=IufzbVf2iFVM9b8V7su4', // style URL
-    style: 'https://api.maptiler.com/maps/landscape/style.json?key=IufzbVf2iFVM9b8V7su4',
+    //style: 'https://api.maptiler.com/maps/hybrid/style.json?key=IufzbVf2iFVM9b8V7su4',
+    style: 'https://api.maptiler.com/maps/landscape/style.json?key=IufzbVf2iFVM9b8V7su4', // style URL
     center: [7.96067, 45.11823], // starting position [lng, lat]
     zoom: 8, // starting zoom
-    attributionControl: false,
+    attributionControl: {compact: true},
+    pitch: 30,
 });
 map.addControl(
     new maplibregl.GeolocateControl({
@@ -26,9 +27,16 @@ map.addControl(
 let hoveredStateId = null;
 
 //-------ADD LAYERS------------------------------------------------------------------------------------------------
-map.on('load', () => {
+map.on('load',  async () => {
+
+    //ADD ETICHETTE
+    const etic1 = await map.loadImage('../icons/etichette/etic11.png');
+    map.addImage('etic1', etic1.data);
 
     //ADD SOURCES
+
+    map.addSource("etichette_ciclovie", {"type": "geojson", "data": "./data/geojson/etichette_ciclabili.geojson"});
+
     map.addSource("Ciclovia_1", {"type": "geojson", "data": "./data/geojson/piste_ciclabili_singole/merged/Ciclovia_1.geojson"});
     map.addSource("Ciclovia_2", {"type": "geojson", "data": "./data/geojson/piste_ciclabili_singole/merged/Ciclovia_2.geojson"});
     map.addSource("Ciclovia_4", {"type": "geojson", "data": "./data/geojson/piste_ciclabili_singole/merged/Ciclovia_4.geojson"});
@@ -43,41 +51,75 @@ map.on('load', () => {
     map.addSource("Ciclovia_20", {"type": "geojson", "data": "./data/geojson/piste_ciclabili_singole/merged/Ciclovia_20.geojson"});
     map.addSource("Ciclovia_22", {"type": "geojson", "data": "./data/geojson/piste_ciclabili_singole/merged/Ciclovia_22.geojson"});
 
+    //map.addSource("etichette_ciclovie", {"type": "geojson", "data": "./data/geojson/etichette_ciclabili.geojson"});
+
+    map.addSource("my_terrain", {
+        "type": "raster-dem",
+        "url": "https://api.maptiler.com/tiles/terrain-rgb-v2/tiles.json?key=IufzbVf2iFVM9b8V7su4",
+      });
+
+    let tc = map.addControl(
+        new maplibregl.TerrainControl({
+            source: 'my_terrain',
+            exaggeration: 1,
+            TerrainControl: false
+        }));
+    map.on("click", "tc", () => {
+        map.setTerrain({
+        source: "my_terrain",
+    });
+});
+
     //ADD LAYER HALO
-    map.addLayer({"id": "Ciclovia_1_bordi","source": "Ciclovia_1","type": "line","paint": {"line-width":2,"line-color": "#000000","line-gap-width": 2, "line-opacity": 0.6}});
-    map.addLayer({"id": "Ciclovia_2_bordi","source": "Ciclovia_2","type": "line","paint": {"line-width":2,"line-color": "#000000","line-gap-width": 2, "line-opacity": 0.6}});
-    map.addLayer({"id": "Ciclovia_4_bordi","source": "Ciclovia_4","type": "line","paint": {"line-width":2,"line-color": "#000000","line-gap-width": 2, "line-opacity": 0.6}});
-    map.addLayer({"id": "Ciclovia_5_bordi","source": "Ciclovia_5","type": "line","paint": {"line-width":2,"line-color": "#000000","line-gap-width": 2, "line-opacity": 0.6}});
-    map.addLayer({"id": "Ciclovia_6_bordi","source": "Ciclovia_6","type": "line","paint": {"line-width":2,"line-color": "#000000","line-gap-width": 2, "line-opacity": 0.6}});
-    map.addLayer({"id": "Ciclovia_7_bordi","source": "Ciclovia_7","type": "line","paint": {"line-width":2,"line-color": "#000000","line-gap-width": 2, "line-opacity": 0.6}});
-    map.addLayer({"id": "Ciclovia_8_bordi","source": "Ciclovia_8","type": "line","paint": {"line-width":2,"line-color": "#000000","line-gap-width": 2, "line-opacity": 0.6}});
-    map.addLayer({"id": "Ciclovia_10_bordi","source": "Ciclovia_10","type": "line","paint": {"line-width":2,"line-color": "#000000","line-gap-width": 2, "line-opacity": 0.6}});
-    map.addLayer({"id": "Ciclovia_15_bordi","source": "Ciclovia_15","type": "line","paint": {"line-width":2,"line-color": "#000000","line-gap-width": 2, "line-opacity": 0.6}});
-    map.addLayer({"id": "Ciclovia_16_bordi","source": "Ciclovia_16","type": "line","paint": {"line-width":2,"line-color": "#000000","line-gap-width": 2, "line-opacity": 0.6}});
-    map.addLayer({"id": "Ciclovia_19_bordi","source": "Ciclovia_19","type": "line","paint": {"line-width":2,"line-color": "#000000","line-gap-width": 2, "line-opacity": 0.6}});
-    map.addLayer({"id": "Ciclovia_20_bordi","source": "Ciclovia_20","type": "line","paint": {"line-width":2,"line-color": "#000000","line-gap-width": 2, "line-opacity": 0.6}});
-    map.addLayer({"id": "Ciclovia_22_bordi","source": "Ciclovia_22","type": "line","paint": {"line-width":2,"line-color": "#000000","line-gap-width": 2, "line-opacity": 0.6}});
+    map.addLayer({"id": "Ciclovia_1_bordi","source": "Ciclovia_1","type": "line","paint": {"line-width":1.5,"line-color": "#000000","line-gap-width": 2, "line-opacity": 0.6}});
+    map.addLayer({"id": "Ciclovia_4_bordi","source": "Ciclovia_4","type": "line","paint": {"line-width":1.5,"line-color": "#000000","line-gap-width": 2, "line-opacity": 0.6}});
+    map.addLayer({"id": "Ciclovia_5_bordi","source": "Ciclovia_5","type": "line","paint": {"line-width":1.5,"line-color": "#000000","line-gap-width": 2, "line-opacity": 0.6}});
+    map.addLayer({"id": "Ciclovia_6_bordi","source": "Ciclovia_6","type": "line","paint": {"line-width":1.5,"line-color": "#000000","line-gap-width": 2, "line-opacity": 0.6}});
+    map.addLayer({"id": "Ciclovia_7_bordi","source": "Ciclovia_7","type": "line","paint": {"line-width":1.5,"line-color": "#000000","line-gap-width": 2, "line-opacity": 0.6}});
+    map.addLayer({"id": "Ciclovia_8_bordi","source": "Ciclovia_8","type": "line","paint": {"line-width":1.5,"line-color": "#000000","line-gap-width": 2, "line-opacity": 0.6}});
+    map.addLayer({"id": "Ciclovia_10_bordi","source": "Ciclovia_10","type": "line","paint": {"line-width":1.5,"line-color": "#000000","line-gap-width": 2, "line-opacity": 0.6}});
+    map.addLayer({"id": "Ciclovia_15_bordi","source": "Ciclovia_15","type": "line","paint": {"line-width":1.5,"line-color": "#000000","line-gap-width": 2, "line-opacity": 0.6}});
+    map.addLayer({"id": "Ciclovia_16_bordi","source": "Ciclovia_16","type": "line","paint": {"line-width":1.5,"line-color": "#000000","line-gap-width": 2, "line-opacity": 0.6}});
+    map.addLayer({"id": "Ciclovia_19_bordi","source": "Ciclovia_19","type": "line","paint": {"line-width":1.5,"line-color": "#000000","line-gap-width": 2, "line-opacity": 0.6}});
+    map.addLayer({"id": "Ciclovia_20_bordi","source": "Ciclovia_20","type": "line","paint": {"line-width":1.5,"line-color": "#000000","line-gap-width": 2, "line-opacity": 0.6}});
+    map.addLayer({"id": "Ciclovia_22_bordi","source": "Ciclovia_22","type": "line","paint": {"line-width":1.5,"line-color": "#000000","line-gap-width": 2, "line-opacity": 0.6}});
 
     //ADD LAYERS
-    map.addLayer({"id": "Ciclovia_1","source": "Ciclovia_1","type": "line","paint": {"line-width": ["case",["boolean", ["feature-state", "hover"], false], 6, 3],"line-color": "#FF0002"}});
-    map.addLayer({"id": "Ciclovia_2","source": "Ciclovia_2","type": "line","paint": {"line-width": ["case",["boolean", ["feature-state", "hover"], false], 7, 4],"line-color": "#81FF00"}});
-    map.addLayer({"id": "Ciclovia_4","source": "Ciclovia_4","type": "line","paint": {"line-width": ["case",["boolean", ["feature-state", "hover"], false], 6, 3],"line-color": "#00FFFD"}});
-    map.addLayer({"id": "Ciclovia_5","source": "Ciclovia_5","type": "line","paint": {"line-width": ["case",["boolean", ["feature-state", "hover"], false], 6, 3],"line-color": "#7E00FF"}});
-    map.addLayer({"id": "Ciclovia_6","source": "Ciclovia_6","type": "line","paint": {"line-width": ["case",["boolean", ["feature-state", "hover"], false], 6, 3],"line-color": "#FF0062"}});
-    map.addLayer({"id": "Ciclovia_7","source": "Ciclovia_7","type": "line","paint": {"line-width": ["case",["boolean", ["feature-state", "hover"], false], 6, 3],"line-color": "#E1FF00"}});
-    map.addLayer({"id": "Ciclovia_8","source": "Ciclovia_8","type": "line","paint": {"line-width": ["case",["boolean", ["feature-state", "hover"], false], 6, 3],"line-color": "#00FF9D"}});
-    map.addLayer({"id": "Ciclovia_10","source": "Ciclovia_10","type": "line","paint": {"line-width": ["case",["boolean", ["feature-state", "hover"], false], 6, 3],"line-color": "#1E00FF"}});
-    map.addLayer({"id": "Ciclovia_15","source": "Ciclovia_15","type": "line","paint": {"line-width": ["case",["boolean", ["feature-state", "hover"], false], 6, 3],"line-color": "#FF00B6"}});
-    map.addLayer({"id": "Ciclovia_16","source": "Ciclovia_16","type": "line","paint": {"line-width": ["case",["boolean", ["feature-state", "hover"], false], 6, 3],"line-color": "#FFC800"}});
-    map.addLayer({"id": "Ciclovia_19","source": "Ciclovia_19","type": "line","paint": {"line-width": ["case",["boolean", ["feature-state", "hover"], false], 6, 3],"line-color": "#00FF49"}});
-    map.addLayer({"id": "Ciclovia_20","source": "Ciclovia_20","type": "line","paint": {"line-width": ["case",["boolean", ["feature-state", "hover"], false], 6, 3],"line-color": "#0037FF"}});
-    map.addLayer({"id": "Ciclovia_22","source": "Ciclovia_22","type": "line","paint": {"line-width": ["case",["boolean", ["feature-state", "hover"], false], 6, 3],"line-color": "#E6FF00"}});
+    map.addLayer({"id": "Ciclovia_1","source": "Ciclovia_1","type": "line","paint": {"line-width": ["case",["boolean", ["feature-state", "hover"], false], 7, 3],"line-color": "#003A52"}});
+    map.addLayer({"id": "Ciclovia_4","source": "Ciclovia_4","type": "line","paint": {"line-width": ["case",["boolean", ["feature-state", "hover"], false], 7, 3],"line-color": "#00778F"}});
+    map.addLayer({"id": "Ciclovia_5","source": "Ciclovia_5","type": "line","paint": {"line-width": ["case",["boolean", ["feature-state", "hover"], false], 7, 3],"line-color": "#006F1C"}});
+    map.addLayer({"id": "Ciclovia_6","source": "Ciclovia_6","type": "line","paint": {"line-width": ["case",["boolean", ["feature-state", "hover"], false], 7, 3],"line-color": "#666666"}});
+    map.addLayer({"id": "Ciclovia_7","source": "Ciclovia_7","type": "line","paint": {"line-width": ["case",["boolean", ["feature-state", "hover"], false], 7, 3],"line-color": "#541877"}});
+    map.addLayer({"id": "Ciclovia_8","source": "Ciclovia_8","type": "line","paint": {"line-width": ["case",["boolean", ["feature-state", "hover"], false], 7, 3],"line-color": "#F39991"}});
+    map.addLayer({"id": "Ciclovia_10","source": "Ciclovia_10","type": "line","paint": {"line-width": ["case",["boolean", ["feature-state", "hover"], false], 7, 3],"line-color": "#F14F04"}});
+    map.addLayer({"id": "Ciclovia_15","source": "Ciclovia_15","type": "line","paint": {"line-width": ["case",["boolean", ["feature-state", "hover"], false], 7, 3],"line-color": "#CB1901"}});
+    map.addLayer({"id": "Ciclovia_16","source": "Ciclovia_16","type": "line","paint": {"line-width": ["case",["boolean", ["feature-state", "hover"], false], 7, 3],"line-color": "#9B2226"}});
+    map.addLayer({"id": "Ciclovia_19","source": "Ciclovia_19","type": "line","paint": {"line-width": ["case",["boolean", ["feature-state", "hover"], false], 7, 3],"line-color": "#99600B"}});
+    map.addLayer({"id": "Ciclovia_20","source": "Ciclovia_20","type": "line","paint": {"line-width": ["case",["boolean", ["feature-state", "hover"], false], 7, 3],"line-color": "#84E675"}});
+    map.addLayer({"id": "Ciclovia_22","source": "Ciclovia_22","type": "line","paint": {"line-width": ["case",["boolean", ["feature-state", "hover"], false], 7, 3],"line-color": "#FFB01F"}});
+
+    //ADD ETICHETTE
+/*     map.addLayer({"id": "etichette_ciclovie","source": "etichette_ciclovie","type": "symbol","layout": {"symbol-placement": "point", "text-field": '{img}', "text-size": 20, "symbol-z-order":"source"}, "paint":{"text-halo-color":
+        ['case',
+                ['==', ['get', 'img'], '1'],'#81FF00',
+                ['==', ['get', 'img'], '4'],'#00FFFD',
+                ['==', ['get', 'img'], '5'],'#7E00FF',
+                ['==', ['get', 'img'], '6'],'#FF0062',
+                ['==', ['get', 'img'], '7'],'#E1FF00',
+                ['==', ['get', 'img'], '8'],'#00FF9D',
+                ['==', ['get', 'img'], '10'],'#1E00FF',
+                ['==', ['get', 'img'], '15'],'#FF00B6',
+                ['==', ['get', 'img'], '16'],'#FFC800',
+                ['==', ['get', 'img'], '19'],'#00FF49',
+                ['==', ['get', 'img'], '20'],'#0037FF',
+                ['==', ['get', 'img'], '22'],'#E6FF00',
+                '#FF0002' //default
+            ], 
+                "text-halo-width":2.5, "text-color":"#ffffff"} }); */
 
 //---------FUNZIONI PER EVIDENZIARE E DISEVIDENZIARE----------------------------
     function evidenzia1(){if (hoveredStateId) {map.setFeatureState({source: "Ciclovia_1", id: hoveredStateId},{hover: false});}; hoveredStateId = 1; map.setFeatureState({source: "Ciclovia_1", id: hoveredStateId},{hover: true}); hoveredStateId = null;};
     function disevidenzia1(){{map.setFeatureState({source: "Ciclovia_1", id: 1},{hover: false});} hoveredStateId = null;};
-    function evidenzia2(){if (hoveredStateId) {map.setFeatureState({source: "Ciclovia_2", id: hoveredStateId},{hover: false});}; hoveredStateId = 2; map.setFeatureState({source: "Ciclovia_2", id: hoveredStateId},{hover: true}); hoveredStateId = null;};
-    function disevidenzia2(){{map.setFeatureState({source: "Ciclovia_2", id: 2},{hover: false});} hoveredStateId = null;};
     function evidenzia4(){if (hoveredStateId) {map.setFeatureState({source: "Ciclovia_4", id: hoveredStateId},{hover: false});}; hoveredStateId = 4; map.setFeatureState({source: "Ciclovia_4", id: hoveredStateId},{hover: true}); hoveredStateId = null;};
     function disevidenzia4(){{map.setFeatureState({source: "Ciclovia_4", id: 4},{hover: false});} hoveredStateId = null;};
     function evidenzia5(){if (hoveredStateId) {map.setFeatureState({source: "Ciclovia_5", id: hoveredStateId},{hover: false});}; hoveredStateId = 5; map.setFeatureState({source: "Ciclovia_5", id: hoveredStateId},{hover: true}); hoveredStateId = null;};
@@ -105,8 +147,6 @@ map.on('load', () => {
 //---------CREATE SELECTION--------------------------------------------
     map.on("mousemove", "Ciclovia_1", () => {evidenzia1()});
     map.on("mouseleave", "Ciclovia_1", () => {disevidenzia1()});
-    map.on("mousemove", "Ciclovia_2", () => {evidenzia2()});
-    map.on("mouseleave", "Ciclovia_2", () => {disevidenzia2()});
     map.on("mousemove", "Ciclovia_4", () => {evidenzia4()});
     map.on("mouseleave", "Ciclovia_4", () => {disevidenzia4()});
     map.on("mousemove", "Ciclovia_5", () => {evidenzia5()});
@@ -133,36 +173,33 @@ map.on('load', () => {
 
     //----INFO-POPUP---------------------------------------
     var my_popup = new maplibregl.Popup()
-    map.on("mousemove", "Ciclovia_1", (e) => {var description_html = '<div>1 - EUROVELO 8</div>'; my_popup.setLngLat(e.lngLat).setHTML(description_html).addTo(map);});
+    map.on("mousemove", "Ciclovia_1", (e) => {var description_html = '<span>1 - EUROVELO 8</span><span><img src="./images/loghi/Eurovelo-Vento.png" class="ps-2" style="width:80px;"></span>'; my_popup.setLngLat(e.lngLat).setHTML(description_html).addTo(map);});
     map.on("mouseleave", "Ciclovia_1", () => {my_popup.remove()});
-    map.on("mousemove", "Ciclovia_2", (e) => {var coordinates = e.features[0].geometry.coordinates[0][0]; var description_html = '<div>2 - VENTO</div>'; my_popup.setLngLat(e.lngLat).setHTML(description_html).addTo(map);});
-    map.on("mouseleave", "Ciclovia_2", () => {my_popup.remove()});
-    map.on("mousemove", "Ciclovia_4", (e) => {var coordinates = e.features[0].geometry.coordinates[0][0]; var description_html = '<div>4 - VIA DEL MARE</div>'; my_popup.setLngLat(e.lngLat).setHTML(description_html).addTo(map);});
+    map.on("mousemove", "Ciclovia_4", (e) => {var coordinates = e.features[0].geometry.coordinates[0][0]; var description_html = '<span>4 - VIA DEL MARE</span>'; my_popup.setLngLat(e.lngLat).setHTML(description_html).addTo(map);});
     map.on("mouseleave", "Ciclovia_4", () => {my_popup.remove()});
-    map.on("mousemove", "Ciclovia_5", (e) => {var coordinates = e.features[0].geometry.coordinates[0][0]; var description_html = '<div>5 - VIA FRANCIGENA VALLE D AOSTA</div>'; my_popup.setLngLat(e.lngLat).setHTML(description_html).addTo(map);});
+    map.on("mousemove", "Ciclovia_5", (e) => {var description_html = '<span>5 - VIA FRANCIGENA VALLE D AOSTA</span>'; my_popup.setLngLat(e.lngLat).setHTML(description_html).addTo(map);});
     map.on("mouseleave", "Ciclovia_5", () => {my_popup.remove()});
-    map.on("mousemove", "Ciclovia_6", (e) => {var coordinates = e.features[0].geometry.coordinates[0][0]; var description_html = '<div>6 - VIA FRANCIGENA VALLE SUSA</div>'; my_popup.setLngLat(e.lngLat).setHTML(description_html).addTo(map);});
+    map.on("mousemove", "Ciclovia_6", (e) => {var description_html = '<span>6 - VIA FRANCIGENA VALLE SUSA</span><span><img src="./images/loghi/Ciclovia-Francigena2.png" class="ps-2" style="width:50px;"></span>'; my_popup.setLngLat(e.lngLat).setHTML(description_html).addTo(map);});
     map.on("mouseleave", "Ciclovia_6", () => {my_popup.remove()});
-    map.on("mousemove", "Ciclovia_7", (e) => {var coordinates = e.features[0].geometry.coordinates[0][0]; var description_html = '<div>7 - VIA DEL TICINO E DEL LAGO MAGGIORE</div>'; my_popup.setLngLat(e.lngLat).setHTML(description_html).addTo(map);});
+    map.on("mousemove", "Ciclovia_7", (e) => {var description_html = '<span>7 - VIA DEL TICINO E DEL LAGO MAGGIORE</span>'; my_popup.setLngLat(e.lngLat).setHTML(description_html).addTo(map);});
     map.on("mouseleave", "Ciclovia_7", () => {my_popup.remove()});
-    map.on("mousemove", "Ciclovia_8", (e) => {var coordinates = e.features[0].geometry.coordinates[0][0]; var description_html = '<div>8 - VIA PROVENZALE</div>'; my_popup.setLngLat(e.lngLat).setHTML(description_html).addTo(map);});
+    map.on("mousemove", "Ciclovia_8", (e) => {var description_html = '<span>8 - VIA PROVENZALE</span>'; my_popup.setLngLat(e.lngLat).setHTML(description_html).addTo(map);});
     map.on("mouseleave", "Ciclovia_8", () => {my_popup.remove()});
-    map.on("mousemove", "Ciclovia_10", (e) => {var coordinates = e.features[0].geometry.coordinates[0][0]; var description_html = '<div>10 - VIA PEDEMONTANA</div>'; my_popup.setLngLat(e.lngLat).setHTML(description_html).addTo(map);});
+    map.on("mousemove", "Ciclovia_10", (e) => {var description_html = '<span>10 - VIA PEDEMONTANA</span>'; my_popup.setLngLat(e.lngLat).setHTML(description_html).addTo(map);});
     map.on("mouseleave", "Ciclovia_10", () => {my_popup.remove()});
-    map.on("mousemove", "Ciclovia_15", (e) => {var coordinates = e.features[0].geometry.coordinates[0][0]; var description_html = '<div>15 - CORONA DI DELIZIE</div>'; my_popup.setLngLat(e.lngLat).setHTML(description_html).addTo(map);});
+    map.on("mousemove", "Ciclovia_15", (e) => {var description_html = '<span>15 - CORONA DI DELIZIE</span><span><img src="./images/loghi/Corona-di-Delizie2.png" class="ps-2" style="width:40px;"></span>'; my_popup.setLngLat(e.lngLat).setHTML(description_html).addTo(map);});
     map.on("mouseleave", "Ciclovia_15", () => {my_popup.remove()});
-    map.on("mousemove", "Ciclovia_16", (e) => {var coordinates = e.features[0].geometry.coordinates[0][0]; var description_html = '<div>16 - BAR2BAR</div>'; my_popup.setLngLat(e.lngLat).setHTML(description_html).addTo(map);});
+    map.on("mousemove", "Ciclovia_16", (e) => {var description_html = '<span>16 - BAR2BAR</span><span><img src="./images/loghi/bartobar2.jpg" class="ps-2" style="width:80px;"></span>'; my_popup.setLngLat(e.lngLat).setHTML(description_html).addTo(map);});
     map.on("mouseleave", "Ciclovia_16", () => {my_popup.remove()});
-    map.on("mousemove", "Ciclovia_19", (e) => {var coordinates = e.features[0].geometry.coordinates[0][0]; var description_html = '<div>19 - TERRE DI COPPI</div>'; my_popup.setLngLat(e.lngLat).setHTML(description_html).addTo(map);});
+    map.on("mousemove", "Ciclovia_19", (e) => {var description_html = '<span>19 - TERRE DI COPPI</span>'; my_popup.setLngLat(e.lngLat).setHTML(description_html).addTo(map);});
     map.on("mouseleave", "Ciclovia_19", () => {my_popup.remove()});
-    map.on("mousemove", "Ciclovia_20", (e) => {var coordinates = e.features[0].geometry.coordinates[0][0]; var description_html = '<div>20 - TRACCE DEI GHIACCIAI</div>'; my_popup.setLngLat(e.lngLat).setHTML(description_html).addTo(map);});
+    map.on("mousemove", "Ciclovia_20", (e) => {var description_html = '<span>20 - TRACCE DEI GHIACCIAI</span>'; my_popup.setLngLat(e.lngLat).setHTML(description_html).addTo(map);});
     map.on("mouseleave", "Ciclovia_20", () => {my_popup.remove()});
-    map.on("mousemove", "Ciclovia_22", (e) => {var coordinates = e.features[0].geometry.coordinates[0][0]; var description_html = '<div>22 - AIDA</div>'; my_popup.setLngLat(e.lngLat).setHTML(description_html).addTo(map);});
+    map.on("mousemove", "Ciclovia_22", (e) => {var description_html = '<span>22 - AIDA</span><span><img src="./images/loghi/AIDA.png" class="ps-2" style="width:80px;"></span>'; my_popup.setLngLat(e.lngLat).setHTML(description_html).addTo(map);});
     map.on("mouseleave", "Ciclovia_22", () => {my_popup.remove()});
     
     //----ONCLIK GO TO PAGES-------------------
     map.on("click", "Ciclovia_1", () => {window.location.href = "./pages/ciclabili.html#c1"});
-    map.on("click", "Ciclovia_2", () => {window.location.href = "./pages/ciclabili.html#c2"});
     map.on("click", "Ciclovia_4", () => {window.location.href = "./pages/ciclabili.html#c4"});
     map.on("click", "Ciclovia_5", () => {window.location.href = "./pages/ciclabili.html#c5"});
     map.on("click", "Ciclovia_6", () => {window.location.href = "./pages/ciclabili.html#c6"});
@@ -178,8 +215,6 @@ map.on('load', () => {
 //--------ON HOVER LEGENDA-------------------------------------------------
     document.getElementById("cicl1").addEventListener("mouseover", evidenzia1);
     document.getElementById("cicl1").addEventListener("mouseleave", disevidenzia1);
-    document.getElementById("cicl2").addEventListener("mouseover", evidenzia2);
-    document.getElementById("cicl2").addEventListener("mouseleave", disevidenzia2);
     document.getElementById("cicl4").addEventListener("mouseover", evidenzia4);
     document.getElementById("cicl4").addEventListener("mouseleave", disevidenzia4);
     document.getElementById("cicl5").addEventListener("mouseover", evidenzia5);
@@ -208,8 +243,6 @@ map.on('load', () => {
     // Change the cursor to a pointer when the mouse is over the places layer. Change it back to a pointer when it leaves.
     map.on("mouseenter", "Ciclovia_1", () => {map.getCanvas().style.cursor = "context-menu";});
     map.on("mouseleave", "Ciclovia_1", () => {map.getCanvas().style.cursor = "";});
-    map.on("mouseenter", "Ciclovia_2", () => {map.getCanvas().style.cursor = "context-menu";});
-    map.on("mouseleave", "Ciclovia_2", () => {map.getCanvas().style.cursor = "";});
     map.on("mouseenter", "Ciclovia_4", () => {map.getCanvas().style.cursor = "context-menu";});
     map.on("mouseleave", "Ciclovia_4", () => {map.getCanvas().style.cursor = "";});
     map.on("mouseenter", "Ciclovia_5", () => {map.getCanvas().style.cursor = "context-menu";});

@@ -1,0 +1,13 @@
+{
+"type": "FeatureCollection",
+"name": "POI_Tracce_dei_Ghiacciai",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::6706" } },
+"features": [
+{ "type": "Feature", "properties": { "fid": 1, "POI": "Siti palafitticoli del Lago di Viverone ", "Category": "UNESCO" }, "geometry": { "type": "Point", "coordinates": [ 8.020214472152244, 45.411453546413831 ] } },
+{ "type": "Feature", "properties": { "fid": 2, "POI": "Castello di Roppolo", "Category": "Residenze Sabaude" }, "geometry": { "type": "Point", "coordinates": [ 8.072722164204455, 45.422334252247985 ] } },
+{ "type": "Feature", "properties": { "fid": 3, "POI": "Serra e laghi di Ivrea", "Category": "Parchi" }, "geometry": { "type": "Point", "coordinates": [ 7.890236659199897, 45.484181207250266 ] } },
+{ "type": "Feature", "properties": { "fid": 4, "POI": "Rosazza", "Category": "Citta" }, "geometry": { "type": "Point", "coordinates": [ 7.976496387914582, 45.675930046383534 ] } },
+{ "type": "Feature", "properties": { "fid": 5, "POI": "Sacro Monte di Oropa", "Category": "Chiesa" }, "geometry": { "type": "Point", "coordinates": [ 7.980254945214756, 45.626639141480915 ] } },
+{ "type": "Feature", "properties": { "fid": 6, "POI": "Alagna Valsesia", "Category": "Citta" }, "geometry": { "type": "Point", "coordinates": [ 7.937608287073991, 45.851064881652789 ] } }
+]
+}

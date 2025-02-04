@@ -1,0 +1,21 @@
+{
+"type": "FeatureCollection",
+"name": "POI_Eurovelo_VentTO",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::6706" } },
+"features": [
+{ "type": "Feature", "properties": { "fid": 1, "POI": "Limone Piemonte", "Category": "Citta" }, "geometry": { "type": "Point", "coordinates": [ 7.57407294602876, 44.202341084244892 ] } },
+{ "type": "Feature", "properties": { "fid": 2, "POI": "Cuneo", "Category": "Citta" }, "geometry": { "type": "Point", "coordinates": [ 7.546535202961206, 44.389065222698726 ] } },
+{ "type": "Feature", "properties": { "fid": 3, "POI": "Saluzzo", "Category": "Citta" }, "geometry": { "type": "Point", "coordinates": [ 7.492321628473746, 44.644463758530378 ] } },
+{ "type": "Feature", "properties": { "fid": 4, "POI": "Abbazia di Staffarda", "Category": "Chiesa" }, "geometry": { "type": "Point", "coordinates": [ 7.437459602428827, 44.720900671996027 ] } },
+{ "type": "Feature", "properties": { "fid": 5, "POI": "Palazzina di Caccia di Stupinigi", "Category": "Residenze Sabaude" }, "geometry": { "type": "Point", "coordinates": [ 7.606971977770696, 44.997417635267446 ] } },
+{ "type": "Feature", "properties": { "fid": 6, "POI": "Torino", "Category": "Citta" }, "geometry": { "type": "Point", "coordinates": [ 7.696668666515035, 45.063791795822141 ] } },
+{ "type": "Feature", "properties": { "fid": 7, "POI": "Chivasso", "Category": "Citta" }, "geometry": { "type": "Point", "coordinates": [ 7.890302311803501, 45.182610572469713 ] } },
+{ "type": "Feature", "properties": { "fid": 8, "POI": "Casale Monferrato", "Category": "Citta" }, "geometry": { "type": "Point", "coordinates": [ 8.448112762413174, 45.140987553480969 ] } },
+{ "type": "Feature", "properties": { "fid": 9, "POI": "Parco Fluviale Po e Orba ", "Category": "Parchi" }, "geometry": { "type": "Point", "coordinates": [ 8.595130410237479, 45.099518368247693 ] } },
+{ "type": "Feature", "properties": { "fid": 10, "POI": "Valenza", "Category": "Citta" }, "geometry": { "type": "Point", "coordinates": [ 8.64555549598845, 45.014685413634432 ] } },
+{ "type": "Feature", "properties": { "fid": 11, "POI": "Oasi Lipu ", "Category": "Parchi" }, "geometry": { "type": "Point", "coordinates": [ 7.662568208131558, 44.793962890607936 ] } },
+{ "type": "Feature", "properties": { "fid": 12, "POI": "Castello di Racconigi", "Category": "Residenze Sabaude" }, "geometry": { "type": "Point", "coordinates": [ 7.675559642280446, 44.769312477094665 ] } },
+{ "type": "Feature", "properties": { "fid": 13, "POI": "Infernot", "Category": "UNESCO" }, "geometry": { "type": "Point", "coordinates": [ 8.388034319343143, 45.063118757077135 ] } },
+{ "type": "Feature", "properties": { "fid": 14, "POI": "Sinagoga barocca", "Category": "Chiesa" }, "geometry": { "type": "Point", "coordinates": [ 8.449767311000073, 45.135483824000062 ] } }
+]
+}

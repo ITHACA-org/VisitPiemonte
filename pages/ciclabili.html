@@ -10,28 +10,28 @@
     <link href="../css/style.css" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
+    <div class="container pb-3">
         
     <div class="row">
-        <div class="col my-3 mx-3"><span><h1>CICLOVIE</h1></span></div>
-        <div class="col"><span><a href="../index.html"><button type="button" class="btn btn-outline-danger mt-3">Torna alla mappa</button></a></span></div>
+        <div class="col my-3 mx-3"><span><h1 class="fw-bold">CICLOVIE</h1></span></div>
+        <div class="col"><span><a href="../index.html"><button type="button" class="btn btn-outline-danger mt-3"><i class="fa-solid fa-map me-2"></i>Torna alla mappa</button></a></span></div>
     </div>
-
-    <div class="post container" id="c1">
+    <div class="post container-fluid red_out" id="c1">
         <div class="row">
         <div class="col-md-6 col-12">
         <h2 class="my-4"><b>1 - EUROVELO/VENTO</b></h2>
         <p>La ciclovia Eurovelo interessa nel suo complesso 5.900 km lungo la costa nord del Mediterraneo, dalla Spagna a Cipro e attraversa l'Italia settentrionale da Est a Ovest.
             Il tratto piemontese si estende per circa 250 km passando per le aree del Cuneese, Torinese, Vercellese e Alessandrino, con la porzione di itinerario che collega Torino con Venezia rappresentata dalla ciclovia VenTo.
             Il tratto piemontese parte da Limone Piemonte nel Cuneese e arriva a Isola Sant'Antonio nell'Alessandrino, per un totale di 264 Km e 26 comuni toccati. Si snoda tra suggestivi paesaggi di montagna alla bellezza delle colline Unesco, si snoda tra borghi medievali, castelli, dimore storiche e numerose riserve naturali.</p>
-         <!-- accordion -->
+        <div class="text-center"><img class="img-fluid w-75 rounded pb-3" src="../images/ciclovie/EUROVELO_Colline Unesco del Monferrato Alessandrino_Archivio Alexala©alventomagazine, Ph. Paolo Penni Martelli.jpg"></div>
+            <!-- accordion -->
          <div class="accordion" id="accordionExample">
             <div class="accordion-item">
               <h2 class="accordion-header" id="heading1">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"><i class="fa-solid fa-map-location-dot me-2"></i>Punti d'interesse</button>
               </h2>
               <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
+                <div class="accordion-body my_list">
                     <ul>
                         <li>Limone Piemonte</li>
                         <li>Cuneo</li>
@@ -50,27 +50,36 @@
               </div>
             </div>
           </div>
-            <a href="../data/gpx/Ciclovia_1.gpx" download><button><i class="fa-solid fa-download me-2"></i>Scarica traccia gpx</button></a>
+            <!-- <a href="../data/gpx/Ciclovia_1.gpx" download><button><i class="fa-solid fa-download me-2"></i>Scarica traccia gpx</button></a> -->
         </div>
         <div class="col-md-6 col-12" id="col2">
-            <div id="map1"></div>
+            <div class="rounded" id="map1"></div>
         </div>
         </div>
     </div>
 
-    <div class="post container" id="c4">
+    <div class="post container-fluid red_out" id="c4">
         <div class="row">
         <div class="col-md-6 col-12">
-        <h2 class="my-4"><b>4 - VIA DEL MARE</b></h2>
-        <p>La Ciclovia del Mare, lunga circa 330 km, rappresenta la principale direttrice ciclabile che attraversa la Regione Piemonte da Nord a Sud. Il percorso permette di attraversare tutto il Piemonte orientale, in un lungo viaggio ricco di paesaggi e di belle città. Da Domodossola verso la zona dei laghi, prima Verbania con il Lago Maggiore poi il Lago d'Orta, per pedalare verso Novara. Il paesaggio cambia nel Vercellese con la sua pianura, i canali e risaie. Si prosegue verso sud in direzione Asti attraversando il Monferrato e toccando le colline delle Langhe passando da Alba, per poi proseguire tra paesaggi vari verso il Monregalese: Mondovì, Ceva e Ormea. La ciclovia intercetta numerose direttrici Est-Ovest: Pedemontana, Canale Cavour, Eurovelo 8/VenTO, e Via Francigena, oltre che Bar2Bar e Via Provenzale.</p>
-         <!-- accordion -->
+        <div class="text-center container-fluid" style="background:url(../images/ciclovie/VIA\ DEL\ MARE_Risaie\ vercellesi\ 3_Archivio\ Visit\ Piemonte\ ©alventomagazine\,\ Ph.\ Paolo\ Penni\ Martelli.jpg) center no-repeat; background-size: cover; min-height: 300px;">
+          <!-- <h2 class="my-4"><b>4 - VIA DEL MARE</b></h2> -->
+          <div class="row py-lg-5">
+              <div class="container py-4" style="background-color: rgba(0, 0, 0, 0.877); opacity: 80%;">
+            <h2 class="my-1 text-light"><b>4 - VIA DEL MARE</b></h2>
+          </div>
+        </div>
+        </div>
+        <!-- <h2 class="my-4"><b>4 - VIA DEL MARE</b></h2> -->
+        <p class="pt-2">La Ciclovia del Mare, lunga circa 330 km, rappresenta la principale direttrice ciclabile che attraversa la Regione Piemonte da Nord a Sud. Il percorso permette di attraversare tutto il Piemonte orientale, in un lungo viaggio ricco di paesaggi e di belle città. Da Domodossola verso la zona dei laghi, prima Verbania con il Lago Maggiore poi il Lago d'Orta, per pedalare verso Novara. Il paesaggio cambia nel Vercellese con la sua pianura, i canali e risaie. Si prosegue verso sud in direzione Asti attraversando il Monferrato e toccando le colline delle Langhe passando da Alba, per poi proseguire tra paesaggi vari verso il Monregalese: Mondovì, Ceva e Ormea. La ciclovia intercetta numerose direttrici Est-Ovest: Pedemontana, Canale Cavour, Eurovelo 8/VenTO, e Via Francigena, oltre che Bar2Bar e Via Provenzale.</p>
+        <!-- <div class="text-center"><img class="img-fluid w-75 rounded pb-3" src="../images/ciclovie/VIA DEL MARE_Risaie vercellesi 3_Archivio Visit Piemonte ©alventomagazine, Ph. Paolo Penni Martelli.jpg"></div>  -->
+        <!-- accordion -->
          <div class="accordion" id="accordionExample">
             <div class="accordion-item">
               <h2 class="accordion-header" id="heading1">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseOne"><i class="fa-solid fa-map-location-dot me-2"></i>Punti d'interesse</button>
               </h2>
               <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
+                <div class="accordion-body my_list">
                     <ul>
                         <li>Sacri Monti: Calvario di Domodossola, Orta S. Giulio, Serralunga di Crea</li>
                         <li>Borgo di Santa Maria Maggior</li>
@@ -83,19 +92,18 @@
               </div>
             </div>
           </div>
-            <a href="../data/gpx/Ciclovia_4.gpx" download><button><i class="fa-solid fa-download me-2"></i>Scarica traccia gpx</button></a>
         </div>
         <div class="col-md-6 col-12" id="col2">
-            <div id="map4"></div>
+            <div class="rounded" id="map4"></div>
         </div>
         </div>
     </div>
 
-    <div class="post container" id="c5">
+    <div class="post container-fluid red_out" id="c5">
         <div class="row">
-        <div class="col-md-6 col-12">
-        <h2 class="my-4"><b>5 - VIA FRANCIGENA VALLE D'AOSTA</b></h2>
-        <p>Il percorso ciclabile della Via Francigena, parte del più esteso percorso n. 3 della rete Bicitalia, propone un itinerario che nell'antichità veniva scelto dai pellegrini per raggiungere Roma. Dalla Valle d'Aosta verso sud-ovest ci si collega al percorso Via del Mare.
+        <div class="col-md-6 col-12" style="background:url(../images/ciclovie/copia.jpg) center no-repeat; background-size: cover;">
+        <h2 class="my-4 text-dark"><b>5 - VIA FRANCIGENA VALLE D'AOSTA</b></h2>
+        <p class="text-dark">Il percorso ciclabile della Via Francigena, parte del più esteso percorso n. 3 della rete Bicitalia, propone un itinerario che nell'antichità veniva scelto dai pellegrini per raggiungere Roma. Dalla Valle d'Aosta verso sud-ovest ci si collega al percorso Via del Mare.
 
             La Via Francigena permette di pedalare tra gli affascinanti paesaggi montani per raggiungere la pianura e infine per attraversare gli Appennini che portano al mare. Con un'estensione sul territorio piemontese di circa 76 km, il percorso parte da Carema tipico per i suoi paesaggi vitivinicoli (ultimo comune prima del confine con la valle d'Aosta) per proseguire lungo la direttrice Ivrea-Santhià-Vercelli.</p>
          <!-- accordion -->
@@ -105,7 +113,7 @@
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseOne"><i class="fa-solid fa-map-location-dot me-2"></i>Punti d'interesse</button>
               </h2>
               <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
+                <div class="accordion-body my_list">
                     <ul>
                         <li>Lago di Viverone e sito palafitticolo Patrimonio UNESCO</li>
                         <li>Lago di Bertignano</li>
@@ -118,15 +126,14 @@
               </div>
             </div>
           </div>
-            <a href="../data/gpx/Ciclovia_5.gpx" download><button><i class="fa-solid fa-download me-2"></i>Scarica traccia gpx</button></a>
         </div>
         <div class="col-md-6 col-12" id="col2">
-            <div id="map5"></div>
+            <div class="rounded" id="map5"></div>
         </div>
         </div>
     </div>
 
-    <div class="post container" id="c6">
+    <div class="post container-fluid red_out" id="c6">
         <div class="row">
         <div class="col-md-6 col-12">
         <h2 class="my-4"><b>6 - VIA FRANCIGENA VALLE SUSA</b></h2>
@@ -138,7 +145,7 @@
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseOne"><i class="fa-solid fa-map-location-dot me-2"></i>Punti d'interesse</button>
               </h2>
               <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
+                <div class="accordion-body my_list">
                     <ul>
                         <li>Abbazia di Novalesa</li>
                         <li>Sacra di San Michele</li>
@@ -156,15 +163,14 @@
               </div>
             </div>
           </div>
-            <a href="../data/gpx/Ciclovia_6.gpx" download><button><i class="fa-solid fa-download me-2"></i>Scarica traccia gpx</button></a>
         </div>
         <div class="col-md-6 col-12" id="col2">
-            <div id="map6"></div>
+            <div class="rounded" id="map6"></div>
         </div>
         </div>
     </div>
 
-    <div class="post container" id="c7">
+    <div class="post container-fluid red_out" id="c7">
         <div class="row">
         <div class="col-md-6 col-12">
         <h2 class="my-4"><b>7 - VIA DEL TICINO E DEL LAGO MAGGIORE</b></h2>
@@ -175,7 +181,7 @@
          <div class="accordion" id="accordionExample">
             <div class="accordion-item">
               <h2 class="accordion-header" id="heading1">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseOne"><i class="fa-solid fa-map-location-dot me-2"></i>Punti d'interesse</button>
+                <button class="accordion-button my_list" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseOne"><i class="fa-solid fa-map-location-dot me-2"></i>Punti d'interesse</button>
               </h2>
               <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
@@ -190,15 +196,14 @@
               </div>
             </div>
           </div>
-            <a href="../data/gpx/Ciclovia_7.gpx" download><button><i class="fa-solid fa-download me-2"></i>Scarica traccia gpx</button></a>
         </div>
         <div class="col-md-6 col-12" id="col2">
-            <div id="map7"></div>
+            <div class="rounded" id="map7"></div>
         </div>
         </div>
     </div>
 
-    <div class="post container" id="c6">
+    <div class="post container-fluid red_out" id="c8">
         <div class="row">
         <div class="col-md-6 col-12">
         <h2 class="my-4"><b>8 - VIA PROVENZALE</b></h2>
@@ -210,7 +215,7 @@
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseOne"><i class="fa-solid fa-map-location-dot me-2"></i>Punti d'interesse</button>
               </h2>
               <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
+                <div class="accordion-body my_list">
                     <ul>
                         <li>Città di Cherasco , Cuneo e Fossano</li>
                         <li>Area archeologica romana di Bene Vagienna</li>
@@ -223,15 +228,14 @@
               </div>
             </div>
           </div>
-            <a href="../data/gpx/Ciclovia_8.gpx" download><button><i class="fa-solid fa-download me-2"></i>Scarica traccia gpx</button></a>
         </div>
         <div class="col-md-6 col-12" id="col8">
-            <div id="map8"></div>
+            <div class="rounded" id="map8"></div>
         </div>
         </div>
     </div>
 
-    <div class="post container" id="c10">
+    <div class="post container-fluid red_out" id="c10">
         <div class="row">
         <div class="col-md-6 col-12">
         <h2 class="my-4"><b>10 - VIA PEDEMONTANA</b></h2>
@@ -243,7 +247,7 @@
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseOne"><i class="fa-solid fa-map-location-dot me-2"></i>Punti d'interesse</button>
               </h2>
               <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
+                <div class="accordion-body my_list">
                     <ul>
                         <li>Città di Biella e di Ivrea</li>
                         <li>Sacro Monte di Belmonte Valperga</li>
@@ -256,15 +260,14 @@
               </div>
             </div>
           </div>
-            <a href="../data/gpx/Ciclovia_10.gpx" download><button><i class="fa-solid fa-download me-2"></i>Scarica traccia gpx</button></a>
         </div>
         <div class="col-md-6 col-12" id="col2">
-            <div id="map10"></div>
+            <div class="rounded" id="map10"></div>
         </div>
         </div>
     </div>
 
-    <div class="post container" id="c15">
+    <div class="post container-fluid red_out" id="c15">
         <div class="row">
         <div class="col-md-6 col-12">
         <h2 class="my-4"><b>15 - CORONA DI DELIZIE</b></h2>
@@ -276,7 +279,7 @@
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseOne"><i class="fa-solid fa-map-location-dot me-2"></i>Punti d'interesse</button>
               </h2>
               <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
+                <div class="accordion-body my_list">
                     <ul>
                         <li>Residenze Sabaude: Rivoli, Venaria e La Mandria, Stupinigi, Piazza Castello, Valentino, Villa della Regina, Moncalieri</li>
                         <li>Città di Torino</li>
@@ -287,15 +290,14 @@
               </div>
             </div>
           </div>
-            <a href="../data/gpx/Ciclovia_15.gpx" download><button><i class="fa-solid fa-download me-2"></i>Scarica traccia gpx</button></a>
         </div>
         <div class="col-md-6 col-12" id="col2">
-            <div id="map15"></div>
+            <div class="rounded" id="map15"></div>
         </div>
         </div>
     </div>
 
-    <div class="post container" id="c16">
+    <div class="post container-fluid red_out" id="c16">
         <div class="row">
         <div class="col-md-6 col-12">
         <h2 class="my-4"><b>16 - BAR TO BAR</b></h2>
@@ -311,7 +313,7 @@
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseOne"><i class="fa-solid fa-map-location-dot me-2"></i>Punti d'interesse</button>
               </h2>
               <div id="collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
+                <div class="accordion-body my_list">
                     <ul>
                         <li>Paesaggi vitivinicoli di Langhe-Roero e del Monferrato, Patrimonio UNESCO</li>
                         <li>Alba, città Creativa UNESCO per la gastronomia</li>
@@ -325,15 +327,14 @@
               </div>
             </div>
           </div>
-            <a href="../data/gpx/Ciclovia_16.gpx" download><button><i class="fa-solid fa-download me-2"></i>Scarica traccia gpx</button></a>
         </div>
         <div class="col-md-6 col-12" id="col2">
-            <div id="map16"></div>
+            <div class="rounded" id="map16"></div>
         </div>
         </div>
     </div>
 
-    <div class="post container" id="c19">
+    <div class="post container-fluid red_out" id="c19">
         <div class="row">
         <div class="col-md-6 col-12">
         <h2 class="my-4"><b>19 - TERRE DI COPPI</b></h2>
@@ -349,7 +350,7 @@
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseOne"><i class="fa-solid fa-map-location-dot me-2"></i>Punti d'interesse</button>
               </h2>
               <div id="collapseTen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
+                <div class="accordion-body my_list">
                     <ul>
                         <li>Città di Novi Ligure e Museo dei Campionissimi</li>
                         <li>Casa natale di Fausto Coppi a Castellania</li>
@@ -359,15 +360,14 @@
               </div>
             </div>
           </div>
-            <a href="../data/gpx/Ciclovia_19.gpx" download><button><i class="fa-solid fa-download me-2"></i>Scarica traccia gpx</button></a>
         </div>
         <div class="col-md-6 col-12" id="col2">
-            <div id="map19"></div>
+            <div class="rounded" id="map19"></div>
         </div>
         </div>
     </div>
 
-    <div class="post container" id="c20">
+    <div class="post container-fluid red_out" id="c20">
         <div class="row">
         <div class="col-md-6 col-12">
         <h2 class="my-4"><b>20 - TRACCE DEI GHIACCIAI</b></h2>
@@ -379,7 +379,7 @@
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseOne"><i class="fa-solid fa-map-location-dot me-2"></i>Punti d'interesse</button>
               </h2>
               <div id="collapseEleven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
+                <div class="accordion-body my_list">
                     <ul>
                         <li>Siti palafitticoli del Lago di Viverone Patrimonio UNESCO</li>
                         <li>Castello di Roppolo</li>
@@ -392,15 +392,14 @@
               </div>
             </div>
           </div>
-            <a href="../data/gpx/Ciclovia_20.gpx" download><button><i class="fa-solid fa-download me-2"></i>Scarica traccia gpx</button></a>
         </div>
         <div class="col-md-6 col-12" id="col2">
-            <div id="map20"></div>
+            <div class="rounded" id="map20"></div>
         </div>
         </div>
     </div>
 
-    <div class="post container" id="c22">
+    <div class="post container-fluid red_out" id="c22">
         <div class="row">
         <div class="col-md-6 col-12">
         <h2 class="my-4"><b>22 - AIDA</b></h2>
@@ -414,29 +413,28 @@
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseOne"><i class="fa-solid fa-map-location-dot me-2"></i>Punti d'interesse</button>
               </h2>
               <div id="collapseTwelve" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
+                <div class="accordion-body my_list">
                     <ul>
-                        <li>Villaggio di Moncenisi</li>
-                        <li>Abbazia di Novalesa</li>
-                        <li>Città di Susa</li>
-                        <li>Sacra di San Michele</li>
-                        <li>Avigliana e il Parco naturale dei Laghi</li>
-                        <li>Palazzina di Caccia di Stupinigi</li>
-                        <li>Città di Torino</li>
-                        <li>Canale Cavour</li>
-                        <li>Città di Chivasso</li>
-                        <li>Bosco delle Sorti della Partecipanza di Trino Vercellese</li>
-                        <li>Città di Vercelli</li>
-                        <li>Città di Novara</li>
+                        <li class="poi_li" id="poi_22_1">Villaggio di Moncenisio</li>
+                        <li class="poi_li" id="poi_22_2">Abbazia di Novalesa</li>
+                        <li class="poi_li" id="poi_22_3">Città di Susa</li>
+                        <li class="poi_li" id="poi_22_4">Sacra di San Michele</li>
+                        <li class="poi_li" id="poi_22_5">Avigliana e il Parco naturale dei Laghi</li>
+                        <li class="poi_li" id="poi_22_6">Palazzina di Caccia di Stupinigi</li>
+                        <li class="poi_li" id="poi_22_7">Città di Torino</li>
+                        <li class="poi_li" id="poi_22_8">Canale Cavour</li>
+                        <li class="poi_li" id="poi_22_9">Città di Chivasso</li>
+                        <li class="poi_li" id="poi_22_10">Bosco delle Sorti della Partecipanza di Trino Vercellese</li>
+                        <li class="poi_li" id="poi_22_11">Città di Vercelli</li>
+                        <li class="poi_li" id="poi_22_12">Città di Novara</li>
                     </ul>
                 </div>
               </div>
             </div>
           </div>
-            <a href="../data/gpx/Ciclovia_22.gpx" download><button><i class="fa-solid fa-download me-2"></i>Scarica traccia gpx</button></a>
         </div>
         <div class="col-md-6 col-12" id="col2">
-            <div id="map22"></div>
+            <div class="rounded" id="map22"></div>
         </div>
         </div>
     </div>

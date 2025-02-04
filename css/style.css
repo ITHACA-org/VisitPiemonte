@@ -2,6 +2,7 @@
 html, body {
     height: 100%;
     width: 100%;
+    font-family:Arial, Helvetica, sans-serif
   }
 #map {
     height: 100%;
@@ -39,6 +40,11 @@ html, body {
 .maplibregl-popup-close-button {
   display: None;
   }
+.maplibregl-popup-content{
+  border-radius: 10%;
+  width: max-content;
+  height: min-content;
+}
 
 /*------------ SIDEBAR----------------------------------- */
 .rounded-rect {
@@ -117,7 +123,7 @@ The toggleSidebar() function removes this class from the element in order to exp
   /* position: relative; */
   position: absolute;
   z-index: 1;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
 }
 .legend div span {
   border-radius: 0%;
@@ -176,4 +182,25 @@ The toggleSidebar() function removes this class from the element in order to exp
 }
 .post button:hover {
   background: #0056b3;
+}
+
+.my_list li:hover {
+  color: #e30613;
+  cursor: pointer;
+}
+
+.accordion-button {
+  background-color: #e30613 !important;
+  color: white !important;
+}
+.accordion-button:hover {
+  background-color: white !important;
+  color: #e30613 !important;
+  outline: groove  !important;
+  outline-color: #e30613 !important;
+}
+
+.red_out {
+  outline: 1px solid  !important;
+  outline-color: #e30613 !important;
 }

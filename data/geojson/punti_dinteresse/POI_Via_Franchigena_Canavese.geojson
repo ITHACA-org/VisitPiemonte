@@ -1,0 +1,16 @@
+{
+"type": "FeatureCollection",
+"name": "POI_Via_Franchigena_Canavese",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::6706" } },
+"features": [
+{ "type": "Feature", "properties": { "fid": 1, "POI": "Lago di Viverone e sito palafitticolo ", "Category": "Unesco" }, "geometry": { "type": "Point", "coordinates": [ 8.020376730835224, 45.411444354278103 ] } },
+{ "type": "Feature", "properties": { "fid": 2, "POI": "Lago di Bertignano ", "Category": "Parchi" }, "geometry": { "type": "Point", "coordinates": [ 8.064015643376765, 45.43045653073591 ] } },
+{ "type": "Feature", "properties": { "fid": 3, "POI": "Ivrea", "Category": "Citta" }, "geometry": { "type": "Point", "coordinates": [ 7.876076130063109, 45.466766257658023 ] } },
+{ "type": "Feature", "properties": { "fid": 4, "POI": "Santhià", "Category": "Citta" }, "geometry": { "type": "Point", "coordinates": [ 8.174549420661055, 45.366162640539528 ] } },
+{ "type": "Feature", "properties": { "fid": 5, "POI": "Vercelli", "Category": "Citta" }, "geometry": { "type": "Point", "coordinates": [ 8.423233227445165, 45.325380673893619 ] } },
+{ "type": "Feature", "properties": { "fid": 6, "POI": "Laghi e Serra di Ivrea", "Category": "Parchi" }, "geometry": { "type": "Point", "coordinates": [ 7.890965639609981, 45.483740596537956 ] } },
+{ "type": "Feature", "properties": { "fid": 7, "POI": "Area vitivinicola di Carema ", "Category": "Parchi" }, "geometry": { "type": "Point", "coordinates": [ 7.814390177000064, 45.579482984000038 ] } },
+{ "type": "Feature", "properties": { "fid": 9, "POI": "Chiesa dei santi Pietro e Paolo", "Category": "Chiesa" }, "geometry": { "type": "Point", "coordinates": [ 7.955498545000069, 45.470968657000071 ] } },
+{ "type": "Feature", "properties": { "fid": 10, "POI": "Chiesa di Santo Stefano di Sessano", "Category": "Chiesa" }, "geometry": { "type": "Point", "coordinates": [ 7.912235390000035, 45.500323034000075 ] } }
+]
+}

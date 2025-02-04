@@ -1,0 +1,19 @@
+{
+"type": "FeatureCollection",
+"name": "POI_AIDA",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::4326" } },
+"features": [
+{ "type": "Feature", "properties": { "fid": 1, "POI": "Villaggio di Moncenisio ", "Category": "Citta" }, "geometry": { "type": "Point", "coordinates": [ 6.982280565801948, 45.205314932239418 ] } },
+{ "type": "Feature", "properties": { "fid": 2, "POI": "Abbazia di Novalesa", "Category": "Chiesa" }, "geometry": { "type": "Point", "coordinates": [ 7.00798468501082, 45.179461786814215 ] } },
+{ "type": "Feature", "properties": { "fid": 3, "POI": "Susa", "Category": "Citta" }, "geometry": { "type": "Point", "coordinates": [ 7.046367645040209, 45.136302246240639 ] } },
+{ "type": "Feature", "properties": { "fid": 4, "POI": "Sacra di San Michele", "Category": "Chiesa" }, "geometry": { "type": "Point", "coordinates": [ 7.342960782024067, 45.097857353238204 ] } },
+{ "type": "Feature", "properties": { "fid": 5, "POI": "Laghi di Aviliana", "Category": "Parchi" }, "geometry": { "type": "Point", "coordinates": [ 7.391392366926016, 45.06010533537146 ] } },
+{ "type": "Feature", "properties": { "fid": 6, "POI": "Palazzina di Caccia di Stupinigi", "Category": "Residenze Sabaude" }, "geometry": { "type": "Point", "coordinates": [ 7.60680298871258, 44.997305300728776 ] } },
+{ "type": "Feature", "properties": { "fid": 7, "POI": "Torino", "Category": "Citta" }, "geometry": { "type": "Point", "coordinates": [ 7.685279807151048, 45.070742323487714 ] } },
+{ "type": "Feature", "properties": { "fid": 8, "POI": "Chivasso", "Category": "Citta" }, "geometry": { "type": "Point", "coordinates": [ 7.889844417037411, 45.186727298711638 ] } },
+{ "type": "Feature", "properties": { "fid": 9, "POI": "Canale Cavour", "Category": "Parchi" }, "geometry": { "type": "Point", "coordinates": [ 8.118671269104517, 45.263725467419249 ] } },
+{ "type": "Feature", "properties": { "fid": 10, "POI": "Bosco delle Sorti della Partecipanza", "Category": "Parchi" }, "geometry": { "type": "Point", "coordinates": [ 8.254188355694772, 45.224483187389211 ] } },
+{ "type": "Feature", "properties": { "fid": 11, "POI": "Vercelli", "Category": "Citta" }, "geometry": { "type": "Point", "coordinates": [ 8.423213761229599, 45.325382322601591 ] } },
+{ "type": "Feature", "properties": { "fid": 12, "POI": "Novara", "Category": "Citta" }, "geometry": { "type": "Point", "coordinates": [ 8.618663901919792, 45.445981304315588 ] } }
+]
+}

@@ -1,0 +1,19 @@
+{
+"type": "FeatureCollection",
+"name": "etichette_ciclabili",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "ciclovia": "Ciclovia_1", "img": "1" }, "geometry": { "type": "Point", "coordinates": [ 8.181988690878422, 45.17420911449522 ] } },
+{ "type": "Feature", "properties": { "ciclovia": "Ciclovia_4", "img": "4" }, "geometry": { "type": "Point", "coordinates": [ 8.249781820515828, 44.994835237527028 ] } },
+{ "type": "Feature", "properties": { "ciclovia": "Ciclovia_5", "img": "5" }, "geometry": { "type": "Point", "coordinates": [ 7.832844650939833, 45.51532499669743 ] } },
+{ "type": "Feature", "properties": { "ciclovia": "Ciclovia_6", "img": "6" }, "geometry": { "type": "Point", "coordinates": [ 7.303914483958555, 45.1019526109623 ] } },
+{ "type": "Feature", "properties": { "ciclovia": "Ciclovia_7", "img": "7" }, "geometry": { "type": "Point", "coordinates": [ 8.645909975130545, 45.624638175210031 ] } },
+{ "type": "Feature", "properties": { "ciclovia": "Ciclovia_8", "img": "8" }, "geometry": { "type": "Point", "coordinates": [ 7.838385932278998, 44.549831293397155 ] } },
+{ "type": "Feature", "properties": { "ciclovia": "Ciclovia_10", "img": "10" }, "geometry": { "type": "Point", "coordinates": [ 7.359915268426731, 44.919747368173866 ] } },
+{ "type": "Feature", "properties": { "ciclovia": "Ciclovia_15", "img": "15" }, "geometry": { "type": "Point", "coordinates": [ 7.627648001767163, 45.138144855771486 ] } },
+{ "type": "Feature", "properties": { "ciclovia": "Ciclovia_16", "img": "16" }, "geometry": { "type": "Point", "coordinates": [ 8.101333658448338, 44.663462798023801 ] } },
+{ "type": "Feature", "properties": { "ciclovia": "Ciclovia_19", "img": "19" }, "geometry": { "type": "Point", "coordinates": [ 8.865008679234785, 44.816203650444763 ] } },
+{ "type": "Feature", "properties": { "ciclovia": "Ciclovia_2'", "img": "20" }, "geometry": { "type": "Point", "coordinates": [ 7.972378907304811, 45.589663907184082 ] } },
+{ "type": "Feature", "properties": { "ciclovia": "Ciclovia_22", "img": "22" }, "geometry": { "type": "Point", "coordinates": [ 8.155567388670944, 45.289092566910497 ] } }
+]
+}
