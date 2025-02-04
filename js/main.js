@@ -30,12 +30,12 @@ let hoveredStateId = null;
 map.on('load',  async () => {
 
     //ADD ETICHETTE
-    const etic1 = await map.loadImage('../icons/etichette/etic11.png');
-    map.addImage('etic1', etic1.data);
+    // const etic1 = await map.loadImage('../icons/etichette/etic11.png');
+    // map.addImage('etic1', etic1.data);
 
     //ADD SOURCES
 
-    map.addSource("etichette_ciclovie", {"type": "geojson", "data": "./data/geojson/etichette_ciclabili.geojson"});
+    // map.addSource("etichette_ciclovie", {"type": "geojson", "data": "./data/geojson/etichette_ciclabili.geojson"});
 
     map.addSource("Ciclovia_1", {"type": "geojson", "data": "./data/geojson/piste_ciclabili_singole/merged/Ciclovia_1.geojson"});
     map.addSource("Ciclovia_2", {"type": "geojson", "data": "./data/geojson/piste_ciclabili_singole/merged/Ciclovia_2.geojson"});
