@@ -173,17 +173,12 @@ The toggleSidebar() function removes this class from the element in order to exp
   color: #555;
 }
 .post button {
-  background: #007BFF;
   color: #fff;
   border: none;
   padding: 10px 15px;
   border-radius: 3px;
   cursor: pointer;
 }
-.post button:hover {
-  background: #0056b3;
-}
-
 .my_list li:hover {
   color: #e30613;
   cursor: pointer;
@@ -199,8 +194,65 @@ The toggleSidebar() function removes this class from the element in order to exp
   outline: groove  !important;
   outline-color: #e30613 !important;
 }
+.accordion-button::after {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+}
+.accordion-button:hover::after {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23e30613'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+}
 
 .red_out {
   outline: 1px solid  !important;
   outline-color: #e30613 !important;
+}
+
+/* --OTHER------- */
+.just-text {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.image-section {
+  position: relative; /* Permette a figcaption di essere posizionata rispetto a questo contenitore */
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.figcap {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  background: rgba(0, 0, 0, 0.6); /* Sfondo trasparente per leggibilità */
+  color: white;
+  text-align: center;
+  padding: 5px;
+  font-size: 10px;
+}
+.logcap {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.maprel {
+  position: relative;
+}
+.logcap2 {
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+}
+.w_logo_col{
+  width: 90px;
+}
+@media screen and (max-width: 600px) {
+  .w_logo_col{
+    width: 60px;
+  }
+}
+
+.nb {
+  background-color: #f4b0ad5f;
 }

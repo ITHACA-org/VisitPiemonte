@@ -2,8 +2,7 @@
 //------ SET BASE MAP FEATURES -------------------------------------------------------------------------------------
 var map = new maplibregl.Map({
     container: 'map', // container id
-    //style: 'https://api.maptiler.com/maps/hybrid/style.json?key=IufzbVf2iFVM9b8V7su4',
-    style: 'https://api.maptiler.com/maps/landscape/style.json?key=IufzbVf2iFVM9b8V7su4', // style URL
+    style: 'https://api.maptiler.com/maps/982f2d1a-dc55-411a-bc48-c51058dc436a/style.json?key=VCYuuzDNyJUjbrkQtpSQ',
     center: [7.96067, 45.11823], // starting position [lng, lat]
     zoom: 8, // starting zoom
     attributionControl: {compact: true},
@@ -50,8 +49,6 @@ map.on('load',  async () => {
     map.addSource("Ciclovia_19", {"type": "geojson", "data": "./data/geojson/piste_ciclabili_singole/merged/Ciclovia_19.geojson"});
     map.addSource("Ciclovia_20", {"type": "geojson", "data": "./data/geojson/piste_ciclabili_singole/merged/Ciclovia_20.geojson"});
     map.addSource("Ciclovia_22", {"type": "geojson", "data": "./data/geojson/piste_ciclabili_singole/merged/Ciclovia_22.geojson"});
-
-    //map.addSource("etichette_ciclovie", {"type": "geojson", "data": "./data/geojson/etichette_ciclabili.geojson"});
 
     map.addSource("my_terrain", {
         "type": "raster-dem",
@@ -173,29 +170,29 @@ map.on('load',  async () => {
 
     //----INFO-POPUP---------------------------------------
     var my_popup = new maplibregl.Popup()
-    map.on("mousemove", "Ciclovia_1", (e) => {var description_html = '<span>1 - EUROVELO 8</span><span><img src="./images/loghi/Eurovelo-Vento.png" class="ps-2" style="width:80px;"></span>'; my_popup.setLngLat(e.lngLat).setHTML(description_html).addTo(map);});
+    map.on("mousemove", "Ciclovia_1", (e) => {var description_html = '<span><img src="./images/loghi/loghi_Regione/PANNELLO R1.jpg" class="ps-2" style="width:100px;"></span>'; my_popup.setLngLat(e.lngLat).setHTML(description_html).addTo(map);});
     map.on("mouseleave", "Ciclovia_1", () => {my_popup.remove()});
-    map.on("mousemove", "Ciclovia_4", (e) => {var coordinates = e.features[0].geometry.coordinates[0][0]; var description_html = '<span>4 - VIA DEL MARE</span>'; my_popup.setLngLat(e.lngLat).setHTML(description_html).addTo(map);});
+    map.on("mousemove", "Ciclovia_4", (e) => {var coordinates = e.features[0].geometry.coordinates[0][0]; var description_html = '<span><img src="./images/loghi/loghi_Regione/PANNELLO R4.jpg" class="ps-2" style="width:100px;"></span>'; my_popup.setLngLat(e.lngLat).setHTML(description_html).addTo(map);});
     map.on("mouseleave", "Ciclovia_4", () => {my_popup.remove()});
-    map.on("mousemove", "Ciclovia_5", (e) => {var description_html = '<span>5 - VIA FRANCIGENA VALLE D AOSTA</span>'; my_popup.setLngLat(e.lngLat).setHTML(description_html).addTo(map);});
+    map.on("mousemove", "Ciclovia_5", (e) => {var description_html = '<span><img src="./images/loghi/loghi_Regione/PANNELLO R5.jpg" class="ps-2" style="width:100px;"></span>'; my_popup.setLngLat(e.lngLat).setHTML(description_html).addTo(map);});
     map.on("mouseleave", "Ciclovia_5", () => {my_popup.remove()});
-    map.on("mousemove", "Ciclovia_6", (e) => {var description_html = '<span>6 - VIA FRANCIGENA VALLE SUSA</span><span><img src="./images/loghi/Ciclovia-Francigena2.png" class="ps-2" style="width:50px;"></span>'; my_popup.setLngLat(e.lngLat).setHTML(description_html).addTo(map);});
+    map.on("mousemove", "Ciclovia_6", (e) => {var description_html = '<span><img src="./images/loghi/loghi_Regione/PANNELLO R6.jpg" class="ps-2" style="width:100px;"></span>'; my_popup.setLngLat(e.lngLat).setHTML(description_html).addTo(map);});
     map.on("mouseleave", "Ciclovia_6", () => {my_popup.remove()});
-    map.on("mousemove", "Ciclovia_7", (e) => {var description_html = '<span>7 - VIA DEL TICINO E DEL LAGO MAGGIORE</span>'; my_popup.setLngLat(e.lngLat).setHTML(description_html).addTo(map);});
+    map.on("mousemove", "Ciclovia_7", (e) => {var description_html = '<span><img src="./images/loghi/loghi_Regione/PANNELLO R7.jpg" class="ps-2" style="width:100px;"></span>'; my_popup.setLngLat(e.lngLat).setHTML(description_html).addTo(map);});
     map.on("mouseleave", "Ciclovia_7", () => {my_popup.remove()});
-    map.on("mousemove", "Ciclovia_8", (e) => {var description_html = '<span>8 - VIA PROVENZALE</span>'; my_popup.setLngLat(e.lngLat).setHTML(description_html).addTo(map);});
+    map.on("mousemove", "Ciclovia_8", (e) => {var description_html = '<span><img src="./images/loghi/loghi_Regione/PANNELLO R8.jpg" class="ps-2" style="width:100px;"></span>'; my_popup.setLngLat(e.lngLat).setHTML(description_html).addTo(map);});
     map.on("mouseleave", "Ciclovia_8", () => {my_popup.remove()});
-    map.on("mousemove", "Ciclovia_10", (e) => {var description_html = '<span>10 - VIA PEDEMONTANA</span>'; my_popup.setLngLat(e.lngLat).setHTML(description_html).addTo(map);});
+    map.on("mousemove", "Ciclovia_10", (e) => {var description_html = '<span><img src="./images/loghi/loghi_Regione/PANNELLO R10.jpg" class="ps-2" style="width:100px;"></span>'; my_popup.setLngLat(e.lngLat).setHTML(description_html).addTo(map);});
     map.on("mouseleave", "Ciclovia_10", () => {my_popup.remove()});
-    map.on("mousemove", "Ciclovia_15", (e) => {var description_html = '<span>15 - CORONA DI DELIZIE</span><span><img src="./images/loghi/Corona-di-Delizie2.png" class="ps-2" style="width:40px;"></span>'; my_popup.setLngLat(e.lngLat).setHTML(description_html).addTo(map);});
+    map.on("mousemove", "Ciclovia_15", (e) => {var description_html = '<span><img src="./images/loghi/loghi_Regione/PANNELLO R15.jpg" class="ps-2" style="width:100px;"></span>'; my_popup.setLngLat(e.lngLat).setHTML(description_html).addTo(map);});
     map.on("mouseleave", "Ciclovia_15", () => {my_popup.remove()});
-    map.on("mousemove", "Ciclovia_16", (e) => {var description_html = '<span>16 - BAR2BAR</span><span><img src="./images/loghi/bartobar2.jpg" class="ps-2" style="width:80px;"></span>'; my_popup.setLngLat(e.lngLat).setHTML(description_html).addTo(map);});
+    map.on("mousemove", "Ciclovia_16", (e) => {var description_html = '<span><img src="./images/loghi/loghi_Regione/PANNELLO R16.jpg" class="ps-2" style="width:100px;"></span>'; my_popup.setLngLat(e.lngLat).setHTML(description_html).addTo(map);});
     map.on("mouseleave", "Ciclovia_16", () => {my_popup.remove()});
-    map.on("mousemove", "Ciclovia_19", (e) => {var description_html = '<span>19 - TERRE DI COPPI</span>'; my_popup.setLngLat(e.lngLat).setHTML(description_html).addTo(map);});
+    map.on("mousemove", "Ciclovia_19", (e) => {var description_html = '<span><img src="./images/loghi/loghi_Regione/PANNELLO R19.jpg" class="ps-2" style="width:100px;"></span>'; my_popup.setLngLat(e.lngLat).setHTML(description_html).addTo(map);});
     map.on("mouseleave", "Ciclovia_19", () => {my_popup.remove()});
-    map.on("mousemove", "Ciclovia_20", (e) => {var description_html = '<span>20 - TRACCE DEI GHIACCIAI</span>'; my_popup.setLngLat(e.lngLat).setHTML(description_html).addTo(map);});
+    map.on("mousemove", "Ciclovia_20", (e) => {var description_html = '<span><img src="./images/loghi/loghi_Regione/PANNELLO R20.jpg" class="ps-2" style="width:100px;"></span>'; my_popup.setLngLat(e.lngLat).setHTML(description_html).addTo(map);});
     map.on("mouseleave", "Ciclovia_20", () => {my_popup.remove()});
-    map.on("mousemove", "Ciclovia_22", (e) => {var description_html = '<span>22 - AIDA</span><span><img src="./images/loghi/AIDA.png" class="ps-2" style="width:80px;"></span>'; my_popup.setLngLat(e.lngLat).setHTML(description_html).addTo(map);});
+    map.on("mousemove", "Ciclovia_22", (e) => {var description_html = '<span><img src="./images/loghi/loghi_Regione/PANNELLO R22.jpg" class="ps-2" style="width:100px;"></span>'; my_popup.setLngLat(e.lngLat).setHTML(description_html).addTo(map);});
     map.on("mouseleave", "Ciclovia_22", () => {my_popup.remove()});
     
     //----ONCLIK GO TO PAGES-------------------
