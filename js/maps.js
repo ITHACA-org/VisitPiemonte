@@ -21,7 +21,7 @@ map1.on('load', async () => {
     map1.addImage('parco_icon', parco_icon.data);
     let residenze_sabaude_icon = await map1.loadImage('../icons/residenze_sabaude_rosso.png');
     map1.addImage('residenze_sabaude_icon', residenze_sabaude_icon.data);
-    let siti_UNESCO_icon = await map1.loadImage('../icons/siti_UNESCO_ROSSO.png');
+    let siti_UNESCO_icon = await map1.loadImage('../icons/siti_UNESCO_rosso.png');
     map1.addImage('siti_UNESCO_icon', siti_UNESCO_icon.data);
     map1.addSource("Ciclovia_1", {"type": "geojson", "data": "../data/geojson/piste_ciclabili_singole/merged/Ciclovia_1.geojson"});
     map1.addSource("Poi_cicl_1", {"type": "geojson", "data": "../data/geojson/punti_dinteresse/R1-R2 Eurovelo-Vento_POI.geojson"});
@@ -94,7 +94,7 @@ map4.on('load', async () => {
     map4.addImage('parco_icon', parco_icon.data);
     let residenze_sabaude_icon = await map4.loadImage('../icons/residenze_sabaude_rosso.png');
     map4.addImage('residenze_sabaude_icon', residenze_sabaude_icon.data);
-    let siti_UNESCO_icon = await map4.loadImage('../icons/siti_UNESCO_ROSSO.png');
+    let siti_UNESCO_icon = await map4.loadImage('../icons/siti_UNESCO_rosso.png');
     map4.addImage('siti_UNESCO_icon', siti_UNESCO_icon.data);
     map4.addSource("Ciclovia_4", {"type": "geojson", "data": "../data/geojson/piste_ciclabili_singole/merged/Ciclovia_4.geojson"});
     map4.addSource("Poi_cicl_4", {"type": "geojson", "data": "../data/geojson/punti_dinteresse/R4 Via del mare_POI.geojson"});
@@ -172,7 +172,7 @@ map5.on('load', async () => {
     map5.addImage('parco_icon', parco_icon.data);
     let residenze_sabaude_icon = await map5.loadImage('../icons/residenze_sabaude_rosso.png');
     map5.addImage('residenze_sabaude_icon', residenze_sabaude_icon.data);
-    let siti_UNESCO_icon = await map5.loadImage('../icons/siti_UNESCO_ROSSO.png');
+    let siti_UNESCO_icon = await map5.loadImage('../icons/siti_UNESCO_rosso.png');
     map5.addImage('siti_UNESCO_icon', siti_UNESCO_icon.data);
     map5.addSource("Ciclovia_5", {"type": "geojson", "data": "../data/geojson/piste_ciclabili_singole/merged/Ciclovia_5.geojson"});
     map5.addSource("Poi_cicl_5", {"type": "geojson", "data": "../data/geojson/punti_dinteresse/R5 Via Francigena della Valle d'Aosta_POI.geojson"});
@@ -241,7 +241,7 @@ map6.on('load', async () => {
     map6.addImage('parco_icon', parco_icon.data);
     let residenze_sabaude_icon = await map6.loadImage('../icons/residenze_sabaude_rosso.png');
     map6.addImage('residenze_sabaude_icon', residenze_sabaude_icon.data);
-    let siti_UNESCO_icon = await map6.loadImage('../icons/siti_UNESCO_ROSSO.png');
+    let siti_UNESCO_icon = await map6.loadImage('../icons/siti_UNESCO_rosso.png');
     map6.addImage('siti_UNESCO_icon', siti_UNESCO_icon.data);
     map6.addSource("Ciclovia_6", {"type": "geojson", "data": "../data/geojson/piste_ciclabili_singole/merged/Ciclovia_6.geojson"});
     map6.addSource("Poi_cicl_6", {"type": "geojson", "data": "../data/geojson/punti_dinteresse/R6 Via Francigena della Valle di Susa_POI.geojson"});
@@ -321,7 +321,7 @@ map7.on('load', async () => {
     map7.addImage('parco_icon', parco_icon.data);
     let residenze_sabaude_icon = await map7.loadImage('../icons/residenze_sabaude_rosso.png');
     map7.addImage('residenze_sabaude_icon', residenze_sabaude_icon.data);
-    let siti_UNESCO_icon = await map7.loadImage('../icons/siti_UNESCO_ROSSO.png');
+    let siti_UNESCO_icon = await map7.loadImage('../icons/siti_UNESCO_rosso.png');
     map7.addImage('siti_UNESCO_icon', siti_UNESCO_icon.data);
     map7.addSource("Ciclovia_7", {"type": "geojson", "data": "../data/geojson/piste_ciclabili_singole/merged/Ciclovia_7.geojson"});
     map7.addSource("Poi_cicl_7", {"type": "geojson", "data": "../data/geojson/punti_dinteresse/R7 Via del Ticino e del Lago Maggiore_POI.geojson"});
@@ -392,7 +392,7 @@ map8.on('load', async () => {
     map8.addImage('parco_icon', parco_icon.data);
     let residenze_sabaude_icon = await map8.loadImage('../icons/residenze_sabaude_rosso.png');
     map8.addImage('residenze_sabaude_icon', residenze_sabaude_icon.data);
-    let siti_UNESCO_icon = await map8.loadImage('../icons/siti_UNESCO_ROSSO.png');
+    let siti_UNESCO_icon = await map8.loadImage('../icons/siti_UNESCO_rosso.png');
     map8.addImage('siti_UNESCO_icon', siti_UNESCO_icon.data);
     map8.addSource("Ciclovia_8", {"type": "geojson", "data": "../data/geojson/piste_ciclabili_singole/merged/Ciclovia_8.geojson"});
     map8.addSource("Poi_cicl_8", {"type": "geojson", "data": "../data/geojson/punti_dinteresse/R8 Via Provenzale_POI.geojson"});
@@ -461,7 +461,7 @@ map10.on('load', async () => {
     map10.addImage('parco_icon', parco_icon.data);
     let residenze_sabaude_icon = await map10.loadImage('../icons/residenze_sabaude_rosso.png');
     map10.addImage('residenze_sabaude_icon', residenze_sabaude_icon.data);
-    let siti_UNESCO_icon = await map10.loadImage('../icons/siti_UNESCO_ROSSO.png');
+    let siti_UNESCO_icon = await map10.loadImage('../icons/siti_UNESCO_rosso.png');
     map10.addImage('siti_UNESCO_icon', siti_UNESCO_icon.data);
     map10.addSource("Ciclovia_10", {"type": "geojson", "data": "../data/geojson/piste_ciclabili_singole/merged/Ciclovia_10.geojson"});
     map10.addSource("Poi_cicl_10", {"type": "geojson", "data": "../data/geojson/punti_dinteresse/R10 Pedemontana_POI.geojson"});
@@ -535,7 +535,7 @@ map15.on('load', async () => {
     map15.addImage('parco_icon', parco_icon.data);
     let residenze_sabaude_icon = await map15.loadImage('../icons/residenze_sabaude_rosso.png');
     map15.addImage('residenze_sabaude_icon', residenze_sabaude_icon.data);
-    let siti_UNESCO_icon = await map15.loadImage('../icons/siti_UNESCO_ROSSO.png');
+    let siti_UNESCO_icon = await map15.loadImage('../icons/siti_UNESCO_rosso.png');
     map15.addImage('siti_UNESCO_icon', siti_UNESCO_icon.data);
     map15.addSource("Ciclovia_15", {"type": "geojson", "data": "../data/geojson/piste_ciclabili_singole/merged/Ciclovia_15.geojson"});
     map15.addSource("Poi_cicl_15", {"type": "geojson", "data": "../data/geojson/punti_dinteresse/R15 Corona di Delizie_POI.geojson"});
@@ -610,7 +610,7 @@ map16.on('load', async () => {
     map16.addImage('parco_icon', parco_icon.data);
     let residenze_sabaude_icon = await map16.loadImage('../icons/residenze_sabaude_rosso.png');
     map16.addImage('residenze_sabaude_icon', residenze_sabaude_icon.data);
-    let siti_UNESCO_icon = await map16.loadImage('../icons/siti_UNESCO_ROSSO.png');
+    let siti_UNESCO_icon = await map16.loadImage('../icons/siti_UNESCO_rosso.png');
     map16.addImage('siti_UNESCO_icon', siti_UNESCO_icon.data);
     map16.addSource("Ciclovia_16", {"type": "geojson", "data": "../data/geojson/piste_ciclabili_singole/merged/Ciclovia_16.geojson"});
     map16.addSource("Poi_cicl_16", {"type": "geojson", "data": "../data/geojson/punti_dinteresse/R16 BartoBar_POI.geojson"});
@@ -677,7 +677,7 @@ map19.on('load', async () => {
     map19.addImage('parco_icon', parco_icon.data);
     let residenze_sabaude_icon = await map19.loadImage('../icons/residenze_sabaude_rosso.png');
     map19.addImage('residenze_sabaude_icon', residenze_sabaude_icon.data);
-    let siti_UNESCO_icon = await map19.loadImage('../icons/siti_UNESCO_ROSSO.png');
+    let siti_UNESCO_icon = await map19.loadImage('../icons/siti_UNESCO_rosso.png');
     map19.addImage('siti_UNESCO_icon', siti_UNESCO_icon.data);
     map19.addSource("Ciclovia_19", {"type": "geojson", "data": "../data/geojson/piste_ciclabili_singole/merged/Ciclovia_19.geojson"});
     map19.addSource("Poi_cicl_19", {"type": "geojson", "data": "../data/geojson/punti_dinteresse/R19 Terre di Coppi_POI.geojson"});
@@ -741,7 +741,7 @@ map20.on('load', async () => {
     map20.addImage('parco_icon', parco_icon.data);
     let residenze_sabaude_icon = await map20.loadImage('../icons/residenze_sabaude_rosso.png');
     map20.addImage('residenze_sabaude_icon', residenze_sabaude_icon.data);
-    let siti_UNESCO_icon = await map20.loadImage('../icons/siti_UNESCO_ROSSO.png');
+    let siti_UNESCO_icon = await map20.loadImage('../icons/siti_UNESCO_rosso.png');
     map20.addImage('siti_UNESCO_icon', siti_UNESCO_icon.data);
     map20.addSource("Ciclovia_20", {"type": "geojson", "data": "../data/geojson/piste_ciclabili_singole/merged/Ciclovia_20.geojson"});
     map20.addSource("Poi_cicl_20", {"type": "geojson", "data": "../data/geojson/punti_dinteresse/R20 Tracce dei ghiacciai_POI.geojson"});
@@ -809,7 +809,7 @@ map22.on('load', async () => {
     map22.addImage('parco_icon', parco_icon.data);
     let residenze_sabaude_icon = await map22.loadImage('../icons/residenze_sabaude_rosso.png');
     map22.addImage('residenze_sabaude_icon', residenze_sabaude_icon.data);
-    let siti_UNESCO_icon = await map22.loadImage('../icons/siti_UNESCO_ROSSO.png');
+    let siti_UNESCO_icon = await map22.loadImage('../icons/siti_UNESCO_rosso.png');
     map22.addImage('siti_UNESCO_icon', siti_UNESCO_icon.data);
     map22.addSource("Ciclovia_22", {"type": "geojson", "data": "../data/geojson/piste_ciclabili_singole/merged/Ciclovia_22.geojson"});
     map22.addSource("Poi_cicl_22", {"type": "geojson", "data": "../data/geojson/punti_dinteresse/R22 AIDA_POI.geojson"});
