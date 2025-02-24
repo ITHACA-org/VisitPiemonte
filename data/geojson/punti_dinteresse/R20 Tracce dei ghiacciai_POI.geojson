@@ -1,0 +1,14 @@
+{
+"type": "FeatureCollection",
+"name": "R20 Tracce dei ghiacciai_POI",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::6706" } },
+"features": [
+{ "type": "Feature", "properties": { "fid_1": 1, "POI": "Siti palafitticoli del Lago di Viverone", "Category": "UNESCO", "Credits": "Visit Piemonte-Getty Images, ph Giorgio Perottino" }, "geometry": { "type": "Point", "coordinates": [ 8.020214472152244, 45.411453546413831 ] } },
+{ "type": "Feature", "properties": { "fid_1": 2, "POI": "Castello di Roppolo", "Category": "Residenze Sabaude", "Credits": "ATL Biella Terre dell'Alto Piemonte" }, "geometry": { "type": "Point", "coordinates": [ 8.072722164204455, 45.422334252247985 ] } },
+{ "type": "Feature", "properties": { "fid_1": 3, "POI": "Serra e laghi di Ivrea", "Category": "Parchi", "Credits": "Visit Piemonte - GettyImages" }, "geometry": { "type": "Point", "coordinates": [ 7.890236659199897, 45.484181207250266 ] } },
+{ "type": "Feature", "properties": { "fid_1": 4, "POI": "Rosazza, uno dei Borghi più belli d’Italia", "Category": "Citta", "Credits": "Visit Piemonte - GettyImages" }, "geometry": { "type": "Point", "coordinates": [ 7.976496387914582, 45.675930046383534 ] } },
+{ "type": "Feature", "properties": { "fid_1": 5, "POI": "Sacro Monte di Oropa", "Category": "Chiesa", "Credits": "Visit Piemonte, ph Giorgio Gulmini" }, "geometry": { "type": "Point", "coordinates": [ 7.980254945214756, 45.626639141480915 ] } },
+{ "type": "Feature", "properties": { "fid_1": 6, "POI": "Alagna Valsesia", "Category": "Citta", "Credits": "Visit Piemonte-GettyImages, Ph G. Perottino" }, "geometry": { "type": "Point", "coordinates": [ 7.935208412201539, 45.855501013992779 ] } },
+{ "type": "Feature", "properties": { "fid_1": 0, "POI": "Monte Rosa", "Category": "Parchi", "Credits": "Ph Fabrizio Piumatti" }, "geometry": { "type": "Point", "coordinates": [ 7.874125507603381, 45.916971307820717 ] } }
+]
+}

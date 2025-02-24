@@ -1,0 +1,13 @@
+{
+"type": "FeatureCollection",
+"name": "R16 BartoBar_POI",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::6706" } },
+"features": [
+{ "type": "Feature", "properties": { "fid_1": 2, "POI": "Castello di Grinzane Cavour", "Category": "UNESCO", "Credits": "Archivio Ente Turismo LMR, ph Can't Forget Italy" }, "geometry": { "type": "Point", "coordinates": [ 7.994918322700794, 44.653043881184495 ] } },
+{ "type": "Feature", "properties": { "fid_1": 5, "POI": "Alba, città Creativa UNESCO per la gastronomia", "Category": "CItta", "Credits": "Visit Piemonte - GettyImages" }, "geometry": { "type": "Point", "coordinates": [ 8.035002114660994, 44.699915944042274 ] } },
+{ "type": "Feature", "properties": { "fid_1": 6, "POI": "MUDET, Museo del tartufo di Alba", "Category": "Museo", "Credits": "ph Valeria Gallo" }, "geometry": { "type": "Point", "coordinates": [ 8.035669007872238, 44.699118012164973 ] } },
+{ "type": "Feature", "properties": { "fid_1": 7, "POI": "WiMu, Museo del Vino a Barolo", "Category": "Museo", "Credits": "Ente Turismo LMR, ph Can't Forget Italy" }, "geometry": { "type": "Point", "coordinates": [ 7.944174184259404, 44.611060613560291 ] } },
+{ "type": "Feature", "properties": { "fid_1": 8, "POI": "Cappella di Brunate a La Morra", "Category": "Monumenti", "Credits": "Visit Piemonte -GettyImages" }, "geometry": { "type": "Point", "coordinates": [ 7.934662729520354, 44.637501430339064 ] } },
+{ "type": "Feature", "properties": { "fid_1": 9, "POI": "Torre di Barbaresco", "Category": "Monumenti", "Credits": "Visit Piemonte -GettyImages" }, "geometry": { "type": "Point", "coordinates": [ 8.080398913942838, 44.727522416298882 ] } }
+]
+}

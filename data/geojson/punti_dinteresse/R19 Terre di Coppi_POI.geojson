@@ -1,0 +1,10 @@
+{
+"type": "FeatureCollection",
+"name": "R19 Terre di Coppi_POI",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::6706" } },
+"features": [
+{ "type": "Feature", "properties": { "fid_1": 2, "POI": "Novi Ligure e Museo dei Campionissimi", "Category": "Citta", "Credits": "Archivio ALEXALA, Ph Gianluca Grassano" }, "geometry": { "type": "Point", "coordinates": [ 8.791576652842732, 44.764676125049334 ] } },
+{ "type": "Feature", "properties": { "fid_1": 3, "POI": "Casa natale di Fausto Coppi a Castellania", "Category": "Museo", "Credits": "Consorzio Terre di Fausto Coppi" }, "geometry": { "type": "Point", "coordinates": [ 8.930644637555751, 44.797994535325017 ] } },
+{ "type": "Feature", "properties": { "fid_1": 4, "POI": "Tortona", "Category": "Citta", "Credits": "Archivio ALEXALA, Ph Gianluca Grassano" }, "geometry": { "type": "Point", "coordinates": [ 8.863886839564501, 44.895882954948327 ] } }
+]
+}

@@ -1,0 +1,15 @@
+{
+"type": "FeatureCollection",
+"name": "R8 Via Provenzale_POI",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::6706" } },
+"features": [
+{ "type": "Feature", "properties": { "fid_1": 1, "POI": "Cherasco", "Category": "Citta", "Credits": "Visit Piemonte - GettyImages" }, "geometry": { "type": "Point", "coordinates": [ 7.858058462292324, 44.652080918440937 ] } },
+{ "type": "Feature", "properties": { "fid_1": 2, "POI": "Cuneo", "Category": "Citta", "Credits": "Visit Piemonte-GettyImages, ph Giorgio Perottino" }, "geometry": { "type": "Point", "coordinates": [ 7.547012668930078, 44.388728372114045 ] } },
+{ "type": "Feature", "properties": { "fid_1": 3, "POI": "Fossano", "Category": "Citta", "Credits": "Visit Piemonte - GettyImages" }, "geometry": { "type": "Point", "coordinates": [ 7.725168038223936, 44.550109736031665 ] } },
+{ "type": "Feature", "properties": { "fid_1": 4, "POI": "Area archeologica romana di Bene Vagienna", "Category": "Musei", "Credits": "Visit Piemonte-GettyImages, ph Giorgio Perottino" }, "geometry": { "type": "Point", "coordinates": [ 7.854821908546272, 44.558978640320198 ] } },
+{ "type": "Feature", "properties": { "fid_1": 5, "POI": "Memoriale della Deportazione di Borgo San Dalmazzo", "Category": "Monumenti", "Credits": "ATL Cuneese" }, "geometry": { "type": "Point", "coordinates": [ 7.486718498804039, 44.326667761353349 ] } },
+{ "type": "Feature", "properties": { "fid_1": 6, "POI": "Santuario di Sant’Anna di Vinadio", "Category": "Chiesa", "Credits": "Visit Piemonte - GettyImages" }, "geometry": { "type": "Point", "coordinates": [ 7.372668985271421, 44.283656713765282 ] } },
+{ "type": "Feature", "properties": { "fid_1": 7, "POI": "Colle e Lago della Maddalena", "Category": "Parchi", "Credits": "null" }, "geometry": { "type": "Point", "coordinates": [ 6.904653022429125, 44.417316490872508 ] } },
+{ "type": "Feature", "properties": { "fid_1": 8, "POI": "Parco delle Alpi Marittime", "Category": "Parchi", "Credits": "Parco Alpi Marittime © Visit Piemonte - GettyImages" }, "geometry": { "type": "Point", "coordinates": [ 7.397560857933634, 44.276805160524631 ] } }
+]
+}

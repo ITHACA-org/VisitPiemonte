@@ -1,0 +1,19 @@
+{
+"type": "FeatureCollection",
+"name": "R1-R2 Eurovelo-Vento_POI",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::6706" } },
+"features": [
+{ "type": "Feature", "properties": { "fid_1": 1, "POI": "Limone Piemonte", "Category": "Citta", "Credits": "Visit Piemonte-GettyImages" }, "geometry": { "type": "Point", "coordinates": [ 7.57407294602876, 44.202341084244892 ] } },
+{ "type": "Feature", "properties": { "fid_1": 2, "POI": "Cuneo", "Category": "Citta", "Credits": "Visit Piemonte-GettyImages, ph Giorgio Perottino" }, "geometry": { "type": "Point", "coordinates": [ 7.546535202961206, 44.389065222698726 ] } },
+{ "type": "Feature", "properties": { "fid_1": 3, "POI": "Saluzzo", "Category": "Citta", "Credits": "Visit Piemonte-GettyImages" }, "geometry": { "type": "Point", "coordinates": [ 7.492321628473746, 44.644463758530378 ] } },
+{ "type": "Feature", "properties": { "fid_1": 4, "POI": "Abbazia di Staffarda", "Category": "Chiesa", "Credits": "Visit Piemonte-GettyImages" }, "geometry": { "type": "Point", "coordinates": [ 7.437459602428827, 44.720900671996027 ] } },
+{ "type": "Feature", "properties": { "fid_1": 5, "POI": "Palazzina di Caccia di Stupinigi", "Category": "Residenze Sabaude", "Credits": "Visit Piemonte, ph Giorgio Gulmini" }, "geometry": { "type": "Point", "coordinates": [ 7.606971977770696, 44.997417635267446 ] } },
+{ "type": "Feature", "properties": { "fid_1": 6, "POI": "Torino", "Category": "Citta", "Credits": "Visit Piemonte-GettyImages" }, "geometry": { "type": "Point", "coordinates": [ 7.683008857836395, 45.068342853577775 ] } },
+{ "type": "Feature", "properties": { "fid_1": 7, "POI": "Chivasso", "Category": "Citta", "Credits": "Visit Piemonte-GettyImages" }, "geometry": { "type": "Point", "coordinates": [ 7.890302311803501, 45.182610572469713 ] } },
+{ "type": "Feature", "properties": { "fid_1": 9, "POI": "Parco Fluviale Po e Orba", "Category": "Parchi", "Credits": "null" }, "geometry": { "type": "Point", "coordinates": [ 8.447291355380223, 45.140445984125023 ] } },
+{ "type": "Feature", "properties": { "fid_1": 10, "POI": "Valenza Po", "Category": "Citta", "Credits": "ALEXALA, ph Gianluca Grassano" }, "geometry": { "type": "Point", "coordinates": [ 8.64555549598845, 45.014685413634432 ] } },
+{ "type": "Feature", "properties": { "fid_1": 14, "POI": "Casale Monferrato", "Category": "Chiesa", "Credits": "Visit Piemonte-GettyImages" }, "geometry": { "type": "Point", "coordinates": [ 8.449767311000073, 45.135483824000062 ] } },
+{ "type": "Feature", "properties": { "fid_1": 0, "POI": "Vernante", "Category": "Citta", "Credits": "Visit Piemonte, ph Giorgio Gulmini_b" }, "geometry": { "type": "Point", "coordinates": [ 7.534458622360467, 44.24475605155417 ] } },
+{ "type": "Feature", "properties": { "fid_1": 0, "POI": "Parco naturale del Meisino", "Category": "Parchi", "Credits": "null" }, "geometry": { "type": "Point", "coordinates": [ 7.733378519100853, 45.089023594452833 ] } }
+]
+}

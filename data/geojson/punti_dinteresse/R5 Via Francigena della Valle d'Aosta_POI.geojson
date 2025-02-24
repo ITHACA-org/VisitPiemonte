@@ -1,0 +1,15 @@
+{
+"type": "FeatureCollection",
+"name": "R5 Via Francigena della Valle d'Aosta_POI",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::6706" } },
+"features": [
+{ "type": "Feature", "properties": { "fid_1": 1, "POI": "Lago di Viverone e Sito palafitticolo UNESCO", "Category": "Unesco", "Credits": "Visit Piemonte-Getty Images, ph Giorgio Perottino" }, "geometry": { "type": "Point", "coordinates": [ 8.020376730835224, 45.411444354278103 ] } },
+{ "type": "Feature", "properties": { "fid_1": 2, "POI": "Lago di Bertignano", "Category": "Parchi", "Credits": "null" }, "geometry": { "type": "Point", "coordinates": [ 8.064015643376765, 45.43045653073591 ] } },
+{ "type": "Feature", "properties": { "fid_1": 3, "POI": "Ivrea", "Category": "Citta", "Credits": "Visit Piemonte-GettyImages_a" }, "geometry": { "type": "Point", "coordinates": [ 7.876076130063109, 45.466766257658023 ] } },
+{ "type": "Feature", "properties": { "fid_1": 4, "POI": "Santhià", "Category": "Citta", "Credits": "null" }, "geometry": { "type": "Point", "coordinates": [ 8.174549420661055, 45.366162640539528 ] } },
+{ "type": "Feature", "properties": { "fid_1": 5, "POI": "Vercelli", "Category": "Citta", "Credits": "Visit Piemonte-GettyImages, Ph G.Perottino" }, "geometry": { "type": "Point", "coordinates": [ 8.423233227445165, 45.325380673893619 ] } },
+{ "type": "Feature", "properties": { "fid_1": 6, "POI": "Laghi e Serra di Ivrea", "Category": "Parchi", "Credits": "Visit Piemonte - GettyImages" }, "geometry": { "type": "Point", "coordinates": [ 7.890965639609981, 45.483740596537956 ] } },
+{ "type": "Feature", "properties": { "fid_1": 7, "POI": "Area vitivinicola di Carema", "Category": "Parchi", "Credits": "Ph Cristina Pellerino" }, "geometry": { "type": "Point", "coordinates": [ 7.811990302127612, 45.583919116340027 ] } },
+{ "type": "Feature", "properties": { "fid_1": 0, "POI": "Piverone", "Category": "Citta", "Credits": "Visit Piemonte, ph Gianni Oliva" }, "geometry": { "type": "Point", "coordinates": [ 8.004747319561394, 45.448450294284164 ] } }
+]
+}

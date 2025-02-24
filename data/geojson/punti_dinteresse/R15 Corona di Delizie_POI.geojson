@@ -1,0 +1,21 @@
+{
+"type": "FeatureCollection",
+"name": "R15 Corona di Delizie_POI",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::6706" } },
+"features": [
+{ "type": "Feature", "properties": { "fid_1": 1, "POI": "Castello di Rivoli", "Category": "Residenze Sabaude", "Credits": "Visit Piemonte, Ph. Giorgio Gulmini" }, "geometry": { "type": "Point", "coordinates": [ 7.510964449191813, 45.069980836903653 ] } },
+{ "type": "Feature", "properties": { "fid_1": 2, "POI": "Reggia di Venaria", "Category": "Residenze Sabaude", "Credits": "Visit Piemonte, ph Giorgio Gulmin" }, "geometry": { "type": "Point", "coordinates": [ 7.625595202288513, 45.135194413050897 ] } },
+{ "type": "Feature", "properties": { "fid_1": 3, "POI": "Castello della Mandria", "Category": "Residenze Sabaude", "Credits": "Visit Piemonte, ph Giorgio Gulmini_a" }, "geometry": { "type": "Point", "coordinates": [ 7.601427928303401, 45.145502788115046 ] } },
+{ "type": "Feature", "properties": { "fid_1": 4, "POI": "Palazzina di Caccia di Stupinigi", "Category": "Residenze Sabaude", "Credits": "Visit Piemonte, ph Giorgio Gulmini" }, "geometry": { "type": "Point", "coordinates": [ 7.606856673040566, 44.99736669609166 ] } },
+{ "type": "Feature", "properties": { "fid_1": 5, "POI": "Musei Reali", "Category": "Musei", "Credits": "Consorzio delle Residenze Reali Sabaude" }, "geometry": { "type": "Point", "coordinates": [ 7.686640208096851, 45.072563699938797 ] } },
+{ "type": "Feature", "properties": { "fid_1": 6, "POI": "Castello del Valentino", "Category": "Parco", "Credits": "Visit Piemonte, Ph Giorgio Gulmini" }, "geometry": { "type": "Point", "coordinates": [ 7.685442433063419, 45.048858651920526 ] } },
+{ "type": "Feature", "properties": { "fid_1": 7, "POI": "Villa della Regina", "Category": "Residenze Sabaude", "Credits": "Consorzio delle Residenze Reali Sabaude, ph Dario " }, "geometry": { "type": "Point", "coordinates": [ 7.708196361435925, 45.058206076766801 ] } },
+{ "type": "Feature", "properties": { "fid_1": 8, "POI": "Castello di Moncalieri", "Category": "Residenze Sabaude", "Credits": "Ph. Dario Fusaro" }, "geometry": { "type": "Point", "coordinates": [ 7.687732306000044, 45.001909521000073 ] } },
+{ "type": "Feature", "properties": { "fid_1": 9, "POI": "Torino", "Category": "Citta", "Credits": "Visit Piemonte-GettyImages" }, "geometry": { "type": "Point", "coordinates": [ 7.683008857836413, 45.068342853577754 ] } },
+{ "type": "Feature", "properties": { "fid_1": 10, "POI": "Basilica di Superga", "Category": "Parchi", "Credits": "Visit Piemonte-GettyImages" }, "geometry": { "type": "Point", "coordinates": [ 7.767116961643619, 45.080585608950528 ] } },
+{ "type": "Feature", "properties": { "fid_1": 11, "POI": "Collina del Po", "Category": "Parchi", "Credits": "Visit Piemonte-GettyImages" }, "geometry": { "type": "Point", "coordinates": [ 7.890427237699984, 45.161166848988714 ] } },
+{ "type": "Feature", "properties": { "fid_1": 0, "POI": "Palazzo Madama", "Category": "Musei", "Credits": "Visit Piemonte-GettyImages, ph G.Perottino" }, "geometry": { "type": "Point", "coordinates": [ 7.685646556991267, 45.071049334895243 ] } },
+{ "type": "Feature", "properties": { "fid_1": 0, "POI": "Palazzo Carignano", "Category": "Residenze Sabaude", "Credits": "Visit Piemonte-GettyImages" }, "geometry": { "type": "Point", "coordinates": [ 7.685160321813187, 45.069120844761756 ] } },
+{ "type": "Feature", "properties": { "fid_1": 0, "POI": "Palazzo Chiablese", "Category": "Residenze Sabaude", "Credits": "Visit Piemonte-GettyImages" }, "geometry": { "type": "Point", "coordinates": [ 7.685943455318762, 45.072801954254288 ] } }
+]
+}

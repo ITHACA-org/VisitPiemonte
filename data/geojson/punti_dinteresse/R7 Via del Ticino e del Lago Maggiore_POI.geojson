@@ -1,0 +1,16 @@
+{
+"type": "FeatureCollection",
+"name": "R7 Via del Ticino e del Lago Maggiore_POI",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::6706" } },
+"features": [
+{ "type": "Feature", "properties": { "fid_1": 1, "POI": "Sacro Monte di Ghiffa", "Category": "Chiesa", "Credits": "Visit Piemonte, Ph Giorgio Gulmini" }, "geometry": { "type": "Point", "coordinates": [ 8.615745503099147, 45.962356235999572 ] } },
+{ "type": "Feature", "properties": { "fid_1": 2, "POI": "Riserva Naturale Speciale Canneti del Fondo Toce", "Category": "Parchi", "Credits": "Visit Piemonte - GettyImages" }, "geometry": { "type": "Point", "coordinates": [ 8.48525881274155, 45.940390289086288 ] } },
+{ "type": "Feature", "properties": { "fid_1": 3, "POI": "Golfo Borromeo", "Category": "Citta", "Credits": "Visit Piemonte-GettyImages" }, "geometry": { "type": "Point", "coordinates": [ 8.520525925008938, 45.900766410562433 ] } },
+{ "type": "Feature", "properties": { "fid_1": 6, "POI": "Verbania", "Category": "Citta", "Credits": "Visit Piemonte-GettyImages" }, "geometry": { "type": "Point", "coordinates": [ 8.551244068984449, 45.922434528374055 ] } },
+{ "type": "Feature", "properties": { "fid_1": 7, "POI": "Arona", "Category": "Citta", "Credits": "null" }, "geometry": { "type": "Point", "coordinates": [ 8.560162971893771, 45.76114536049478 ] } },
+{ "type": "Feature", "properties": { "fid_1": 11, "POI": "Stresa", "Category": "Citta", "Credits": "Visit Piemonte, ph Luca Casale" }, "geometry": { "type": "Point", "coordinates": [ 8.540135155564316, 45.883400144139856 ] } },
+{ "type": "Feature", "properties": { "fid_1": 12, "POI": "Cannero Riviera", "Category": "Citta", "Credits": "Visit Piemonte-GettyImages, Ph G.Perottino" }, "geometry": { "type": "Point", "coordinates": [ 8.681003137350524, 46.022853507737715 ] } },
+{ "type": "Feature", "properties": { "fid_1": 13, "POI": "Cannobio", "Category": "Citta", "Credits": "Visit Piemonte-GettyImages" }, "geometry": { "type": "Point", "coordinates": [ 8.700374076606792, 46.063627796695542 ] } },
+{ "type": "Feature", "properties": { "fid_1": 14, "POI": "Siti palafitticoli dei Lagoni di Mercurago", "Category": "Parchi", "Credits": "null" }, "geometry": { "type": "Point", "coordinates": [ 8.546090726509281, 45.741496822129157 ] } }
+]
+}

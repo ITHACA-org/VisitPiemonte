@@ -1,0 +1,19 @@
+{
+"type": "FeatureCollection",
+"name": "R22 AIDA_POI",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::6706" } },
+"features": [
+{ "type": "Feature", "properties": { "fid_1": 1, "POI": "Borgo di Moncenisio", "Category": "Citta", "Credits": "Visit Piemonte-Gettyimages" }, "geometry": { "type": "Point", "coordinates": [ 6.982280565801948, 45.205314932239418 ] } },
+{ "type": "Feature", "properties": { "fid_1": 2, "POI": "Abbazia di Novalesa", "Category": "Chiesa", "Credits": "Visit Piemonte, ph Gianni Oliva photography" }, "geometry": { "type": "Point", "coordinates": [ 7.00798468501082, 45.179461786814215 ] } },
+{ "type": "Feature", "properties": { "fid_1": 3, "POI": "Susa", "Category": "Citta", "Credits": "Turismo Torino e Provincia" }, "geometry": { "type": "Point", "coordinates": [ 7.046367645040209, 45.136302246240639 ] } },
+{ "type": "Feature", "properties": { "fid_1": 4, "POI": "Sacra di San Michele", "Category": "Chiesa", "Credits": "Visit Piemonte, ph Ludovico de Maistre" }, "geometry": { "type": "Point", "coordinates": [ 7.342960782024067, 45.097857353238204 ] } },
+{ "type": "Feature", "properties": { "fid_1": 5, "POI": "Avigliana e il Parco naturale dei Laghi", "Category": "Parchi", "Credits": "Visit Piemonte, ph Giorgio Gulmini" }, "geometry": { "type": "Point", "coordinates": [ 7.391392366926016, 45.06010533537146 ] } },
+{ "type": "Feature", "properties": { "fid_1": 6, "POI": "Palazzina di Caccia di Stupinigi", "Category": "Residenze Sabaude", "Credits": "Visit Piemonte, ph Giorgio Gulmini" }, "geometry": { "type": "Point", "coordinates": [ 7.60680298871258, 44.997305300728776 ] } },
+{ "type": "Feature", "properties": { "fid_1": 7, "POI": "Torino", "Category": "Citta", "Credits": "Visit Piemonte, ph Giorgio Gulmini" }, "geometry": { "type": "Point", "coordinates": [ 7.683008857836398, 45.068342853577818 ] } },
+{ "type": "Feature", "properties": { "fid_1": 8, "POI": "Chivasso", "Category": "Citta", "Credits": "Visit Piemonte-GettyImages" }, "geometry": { "type": "Point", "coordinates": [ 7.889844417037411, 45.186727298711638 ] } },
+{ "type": "Feature", "properties": { "fid_1": 9, "POI": "Canale Cavour", "Category": "Parchi", "Credits": "Visit Piemonte-GettyImages" }, "geometry": { "type": "Point", "coordinates": [ 8.118671269104517, 45.263725467419249 ] } },
+{ "type": "Feature", "properties": { "fid_1": 10, "POI": "Bosco della Partecipanza di Trino Vercellese", "Category": "Parchi", "Credits": "ATL Terre dell'Alto Piemonte" }, "geometry": { "type": "Point", "coordinates": [ 8.254188355694772, 45.224483187389211 ] } },
+{ "type": "Feature", "properties": { "fid_1": 11, "POI": "Vercelli", "Category": "Citta", "Credits": "Visit Piemonte-GettyImages, Ph G.Perottino" }, "geometry": { "type": "Point", "coordinates": [ 8.423213761229599, 45.325382322601591 ] } },
+{ "type": "Feature", "properties": { "fid_1": 12, "POI": "Novara", "Category": "Citta", "Credits": "Visit Piemonte, ph Giorgio Gulmini" }, "geometry": { "type": "Point", "coordinates": [ 8.618663901919792, 45.445981304315588 ] } }
+]
+}
