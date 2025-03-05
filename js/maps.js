@@ -43,7 +43,7 @@ map1.on('load', async () => {
         let img_path = '../images/punti_di_interesse/POI_EUROVELO-VENTO/'+ e.features[0].properties.POI + '.jpg';
         let credits = e.features[0].properties.Credits
         if (credits == 'null'){var description_html = '<p class="fw-bold">'+poi_name+'</p>';}
-        if (credits != 'null'){var description_html = '<figure class="figure"><p class="fw-bold">'+poi_name+'</p><img class=img-fluid src="'+img_path+'" style="width:200px;"></img><figcaption class="figure-caption">'+credits+'</figcaption></figure>';}
+        if (credits != 'null'){var description_html = '<figure class="figure"><p class="fw-bold">'+poi_name+'</p><img class=img-fluid src="'+img_path+'" style="width:200px;"></img><figcaption class="figure-caption">© '+credits+'</figcaption></figure>';}
         new maplibregl.Popup().setLngLat(e.lngLat).setHTML(description_html).addTo(map1);
     })
     function open_popup1() {
@@ -54,7 +54,7 @@ map1.on('load', async () => {
         let img_path = '../images/punti_di_interesse/POI_EUROVELO-VENTO/'+ l[0].properties.POI + '.jpg';
         let credits = l[0].properties.Credits
         if (credits == 'null'){var description_html = '<p class="fw-bold">'+poi_name+'</p>';}
-        if (credits != 'null'){var description_html = '<figure class="figure"><p class="fw-bold">'+poi_name+'</p><img class=img-fluid src="'+img_path+'" style="width:200px;"></img><figcaption class="figure-caption">'+credits+'</figcaption></figure>';}
+        if (credits != 'null'){var description_html = '<figure class="figure"><p class="fw-bold">'+poi_name+'</p><img class=img-fluid src="'+img_path+'" style="width:200px;"></img><figcaption class="figure-caption">© '+credits+'</figcaption></figure>';}
         new maplibregl.Popup().setLngLat(coord).setHTML(description_html).addTo(map1);
     }
     document.getElementById("poi_1_1").addEventListener("click", open_popup1);
@@ -116,7 +116,7 @@ map4.on('load', async () => {
         let img_path = '../images/punti_di_interesse/POI_VIA DEL MARE/'+ e.features[0].properties.POI + '.jpg';
         let credits = e.features[0].properties.Credits
         if (credits == 'null'){var description_html = '<p class="fw-bold">'+poi_name+'</p>';}
-        if (credits != 'null'){var description_html = '<figure class="figure"><p class="fw-bold">'+poi_name+'</p><img class=img-fluid src="'+img_path+'" style="width:200px;"></img><figcaption class="figure-caption">'+credits+'</figcaption></figure>';}
+        if (credits != 'null'){var description_html = '<figure class="figure"><p class="fw-bold">'+poi_name+'</p><img class=img-fluid src="'+img_path+'" style="width:200px;"></img><figcaption class="figure-caption">© '+credits+'</figcaption></figure>';}
         new maplibregl.Popup().setLngLat(e.lngLat).setHTML(description_html).addTo(map4);
     })
     function open_popup4() {
@@ -127,7 +127,7 @@ map4.on('load', async () => {
         let img_path = '../images/punti_di_interesse/POI_VIA DEL MARE/'+ l[0].properties.POI + '.jpg';
         let credits = l[0].properties.Credits
         if (credits == 'null'){var description_html = '<p class="fw-bold">'+poi_name+'</p>';}
-        if (credits != 'null'){var description_html = '<figure class="figure"><p class="fw-bold">'+poi_name+'</p><img class=img-fluid src="'+img_path+'" style="width:200px;"></img><figcaption class="figure-caption">'+credits+'</figcaption></figure>';}
+        if (credits != 'null'){var description_html = '<figure class="figure"><p class="fw-bold">'+poi_name+'</p><img class=img-fluid src="'+img_path+'" style="width:200px;"></img><figcaption class="figure-caption">© '+credits+'</figcaption></figure>';}
         new maplibregl.Popup().setLngLat(coord).setHTML(description_html).addTo(map4);
     }
     document.getElementById("poi_4_1").addEventListener("click", open_popup4);
@@ -194,7 +194,7 @@ map5.on('load', async () => {
         let img_path = '../images/punti_di_interesse/POI_VIA FRANCIGENA VALLE DAOSTA/'+ e.features[0].properties.POI + '.jpg';
         let credits = e.features[0].properties.Credits
         if (credits == 'null'){var description_html = '<p class="fw-bold">'+poi_name+'</p>';}
-        if (credits != 'null'){var description_html = '<figure class="figure"><p class="fw-bold">'+poi_name+'</p><img class=img-fluid src="'+img_path+'" style="width:200px;"></img><figcaption class="figure-caption">'+credits+'</figcaption></figure>';}
+        if (credits != 'null'){var description_html = '<figure class="figure"><p class="fw-bold">'+poi_name+'</p><img class=img-fluid src="'+img_path+'" style="width:200px;"></img><figcaption class="figure-caption">© '+credits+'</figcaption></figure>';}
         new maplibregl.Popup().setLngLat(e.lngLat).setHTML(description_html).addTo(map5);
     })
     function open_popup5() {
@@ -205,7 +205,7 @@ map5.on('load', async () => {
         let img_path = '../images/punti_di_interesse/POI_VIA FRANCIGENA VALLE DAOSTA/'+ l[0].properties.POI + '.jpg';
         let credits = l[0].properties.Credits
         if (credits == 'null'){var description_html = '<p class="fw-bold">'+poi_name+'</p>';}
-        if (credits != 'null'){var description_html = '<figure class="figure"><p class="fw-bold">'+poi_name+'</p><img class=img-fluid src="'+img_path+'" style="width:200px;"></img><figcaption class="figure-caption">'+credits+'</figcaption></figure>';}
+        if (credits != 'null'){var description_html = '<figure class="figure"><p class="fw-bold">'+poi_name+'</p><img class=img-fluid src="'+img_path+'" style="width:200px;"></img><figcaption class="figure-caption">© '+credits+'</figcaption></figure>';}
         new maplibregl.Popup().setLngLat(coord).setHTML(description_html).addTo(map5);
     }
     document.getElementById("poi_5_1").addEventListener("click", open_popup5);
@@ -263,7 +263,7 @@ map6.on('load', async () => {
         let img_path = '../images/punti_di_interesse/POI_VIA FRANCIGENA VALLE DI SUSA/'+ e.features[0].properties.POI + '.jpg';
         let credits = e.features[0].properties.Credits
         if (credits == 'null'){var description_html = '<p class="fw-bold">'+poi_name+'</p>';}
-        if (credits != 'null'){var description_html = '<figure class="figure"><p class="fw-bold">'+poi_name+'</p><img class=img-fluid src="'+img_path+'" style="width:200px;"></img><figcaption class="figure-caption">'+credits+'</figcaption></figure>';}
+        if (credits != 'null'){var description_html = '<figure class="figure"><p class="fw-bold">'+poi_name+'</p><img class=img-fluid src="'+img_path+'" style="width:200px;"></img><figcaption class="figure-caption">© '+credits+'</figcaption></figure>';}
         new maplibregl.Popup().setLngLat(e.lngLat).setHTML(description_html).addTo(map6);
     })
     function open_popup6() {
@@ -274,7 +274,7 @@ map6.on('load', async () => {
         let img_path = '../images/punti_di_interesse/POI_VIA FRANCIGENA VALLE DI SUSA/'+ l[0].properties.POI + '.jpg';
         let credits = l[0].properties.Credits
         if (credits == 'null'){var description_html = '<p class="fw-bold">'+poi_name+'</p>';}
-        if (credits != 'null'){var description_html = '<figure class="figure"><p class="fw-bold">'+poi_name+'</p><img class=img-fluid src="'+img_path+'" style="width:200px;"></img><figcaption class="figure-caption">'+credits+'</figcaption></figure>';}
+        if (credits != 'null'){var description_html = '<figure class="figure"><p class="fw-bold">'+poi_name+'</p><img class=img-fluid src="'+img_path+'" style="width:200px;"></img><figcaption class="figure-caption">© '+credits+'</figcaption></figure>';}
         new maplibregl.Popup().setLngLat(coord).setHTML(description_html).addTo(map6);
     }
     document.getElementById("poi_6_1").addEventListener("click", open_popup6);
@@ -344,7 +344,7 @@ map7.on('load', async () => {
         let img_path = '../images/punti_di_interesse/POI_VIA DEL TICINO e LAGO MAGGIORE/'+ e.features[0].properties.POI + '.jpg';
         let credits = e.features[0].properties.Credits
         if (credits == 'null'){var description_html = '<p class="fw-bold">'+poi_name+'</p>';}
-        if (credits != 'null'){var description_html = '<figure class="figure"><p class="fw-bold">'+poi_name+'</p><img class=img-fluid src="'+img_path+'" style="width:200px;"></img><figcaption class="figure-caption">'+credits+'</figcaption></figure>';}
+        if (credits != 'null'){var description_html = '<figure class="figure"><p class="fw-bold">'+poi_name+'</p><img class=img-fluid src="'+img_path+'" style="width:200px;"></img><figcaption class="figure-caption">© '+credits+'</figcaption></figure>';}
         new maplibregl.Popup().setLngLat(e.lngLat).setHTML(description_html).addTo(map7);
     })
     function open_popup7() {
@@ -355,7 +355,7 @@ map7.on('load', async () => {
         let img_path = '../images/punti_di_interesse/POI_VIA DEL TICINO e LAGO MAGGIORE/'+ l[0].properties.POI + '.jpg';
         let credits = l[0].properties.Credits
         if (credits == 'null'){var description_html = '<p class="fw-bold">'+poi_name+'</p>';}
-        if (credits != 'null'){var description_html = '<figure class="figure"><p class="fw-bold">'+poi_name+'</p><img class=img-fluid src="'+img_path+'" style="width:200px;"></img><figcaption class="figure-caption">'+credits+'</figcaption></figure>';}
+        if (credits != 'null'){var description_html = '<figure class="figure"><p class="fw-bold">'+poi_name+'</p><img class=img-fluid src="'+img_path+'" style="width:200px;"></img><figcaption class="figure-caption">© '+credits+'</figcaption></figure>';}
         new maplibregl.Popup().setLngLat(coord).setHTML(description_html).addTo(map7);
     }
     document.getElementById("poi_7_1").addEventListener("click", open_popup7);
@@ -414,7 +414,7 @@ map8.on('load', async () => {
         let img_path = '../images/punti_di_interesse/POI_VIA PROVENZALE/'+ e.features[0].properties.POI + '.jpg';
         let credits = e.features[0].properties.Credits
         if (credits == 'null'){var description_html = '<p class="fw-bold">'+poi_name+'</p>';}
-        if (credits != 'null'){var description_html = '<figure class="figure"><p class="fw-bold">'+poi_name+'</p><img class=img-fluid src="'+img_path+'" style="width:200px;"></img><figcaption class="figure-caption">'+credits+'</figcaption></figure>';}
+        if (credits != 'null'){var description_html = '<figure class="figure"><p class="fw-bold">'+poi_name+'</p><img class=img-fluid src="'+img_path+'" style="width:200px;"></img><figcaption class="figure-caption">© '+credits+'</figcaption></figure>';}
         new maplibregl.Popup().setLngLat(e.lngLat).setHTML(description_html).addTo(map8);
     })
     function open_popup8() {
@@ -425,7 +425,7 @@ map8.on('load', async () => {
         let img_path = '../images/punti_di_interesse/POI_VIA PROVENZALE/'+ l[0].properties.POI + '.jpg';
         let credits = l[0].properties.Credits
         if (credits == 'null'){var description_html = '<p class="fw-bold">'+poi_name+'</p>';}
-        if (credits != 'null'){var description_html = '<figure class="figure"><p class="fw-bold">'+poi_name+'</p><img class=img-fluid src="'+img_path+'" style="width:200px;"></img><figcaption class="figure-caption">'+credits+'</figcaption></figure>';}
+        if (credits != 'null'){var description_html = '<figure class="figure"><p class="fw-bold">'+poi_name+'</p><img class=img-fluid src="'+img_path+'" style="width:200px;"></img><figcaption class="figure-caption">© '+credits+'</figcaption></figure>';}
         new maplibregl.Popup().setLngLat(coord).setHTML(description_html).addTo(map8);
     }
     document.getElementById("poi_8_1").addEventListener("click", open_popup8);
@@ -483,7 +483,7 @@ map10.on('load', async () => {
         let img_path = '../images/punti_di_interesse/POI_PEDEMONTANA/'+ e.features[0].properties.POI + '.jpg';
         let credits = e.features[0].properties.Credits
         if (credits == 'null'){var description_html = '<p class="fw-bold">'+poi_name+'</p>';}
-        if (credits != 'null'){var description_html = '<figure class="figure"><p class="fw-bold">'+poi_name+'</p><img class=img-fluid src="'+img_path+'" style="width:200px;"></img><figcaption class="figure-caption">'+credits+'</figcaption></figure>';}
+        if (credits != 'null'){var description_html = '<figure class="figure"><p class="fw-bold">'+poi_name+'</p><img class=img-fluid src="'+img_path+'" style="width:200px;"></img><figcaption class="figure-caption">© '+credits+'</figcaption></figure>';}
         new maplibregl.Popup().setLngLat(e.lngLat).setHTML(description_html).addTo(map10);
     })
     function open_popup10() {
@@ -494,7 +494,7 @@ map10.on('load', async () => {
         let img_path = '../images/punti_di_interesse/POI_PEDEMONTANA/'+ l[0].properties.POI + '.jpg';
         let credits = l[0].properties.Credits
         if (credits == 'null'){var description_html = '<p class="fw-bold">'+poi_name+'</p>';}
-        if (credits != 'null'){var description_html = '<figure class="figure"><p class="fw-bold">'+poi_name+'</p><img class=img-fluid src="'+img_path+'" style="width:200px;"></img><figcaption class="figure-caption">'+credits+'</figcaption></figure>';}
+        if (credits != 'null'){var description_html = '<figure class="figure"><p class="fw-bold">'+poi_name+'</p><img class=img-fluid src="'+img_path+'" style="width:200px;"></img><figcaption class="figure-caption">© '+credits+'</figcaption></figure>';}
         new maplibregl.Popup().setLngLat(coord).setHTML(description_html).addTo(map10);
     }
     document.getElementById("poi_10_1").addEventListener("click", open_popup10);
@@ -557,7 +557,7 @@ map15.on('load', async () => {
         let img_path = '../images/punti_di_interesse/POI_CORONA DI DELIZIE/'+ e.features[0].properties.POI + '.jpg';
         let credits = e.features[0].properties.Credits
         if (credits == 'null'){var description_html = '<p class="fw-bold">'+poi_name+'</p>';}
-        if (credits != 'null'){var description_html = '<figure class="figure"><p class="fw-bold">'+poi_name+'</p><img class=img-fluid src="'+img_path+'" style="width:200px;"></img><figcaption class="figure-caption">'+credits+'</figcaption></figure>';}
+        if (credits != 'null'){var description_html = '<figure class="figure"><p class="fw-bold">'+poi_name+'</p><img class=img-fluid src="'+img_path+'" style="width:200px;"></img><figcaption class="figure-caption">© '+credits+'</figcaption></figure>';}
         new maplibregl.Popup().setLngLat(e.lngLat).setHTML(description_html).addTo(map15);
     })
     function open_popup15() {
@@ -568,7 +568,7 @@ map15.on('load', async () => {
         let img_path = '../images/punti_di_interesse/POI_CORONA DI DELIZIE/'+ l[0].properties.POI + '.jpg';
         let credits = l[0].properties.Credits
         if (credits == 'null'){var description_html = '<p class="fw-bold">'+poi_name+'</p>';}
-        if (credits != 'null'){var description_html = '<figure class="figure"><p class="fw-bold">'+poi_name+'</p><img class=img-fluid src="'+img_path+'" style="width:200px;"></img><figcaption class="figure-caption">'+credits+'</figcaption></figure>';}
+        if (credits != 'null'){var description_html = '<figure class="figure"><p class="fw-bold">'+poi_name+'</p><img class=img-fluid src="'+img_path+'" style="width:200px;"></img><figcaption class="figure-caption">© '+credits+'</figcaption></figure>';}
         new maplibregl.Popup().setLngLat(coord).setHTML(description_html).addTo(map15);
     }
     document.getElementById("poi_15_1").addEventListener("click", open_popup15);
@@ -632,7 +632,7 @@ map16.on('load', async () => {
         let img_path = '../images/punti_di_interesse/POI_BAR2BAR/'+ e.features[0].properties.POI + '.jpg';
         let credits = e.features[0].properties.Credits
         if (credits == 'null'){var description_html = '<p class="fw-bold">'+poi_name+'</p>';}
-        if (credits != 'null'){var description_html = '<figure class="figure"><p class="fw-bold">'+poi_name+'</p><img class=img-fluid src="'+img_path+'" style="width:200px;"></img><figcaption class="figure-caption">'+credits+'</figcaption></figure>';}
+        if (credits != 'null'){var description_html = '<figure class="figure"><p class="fw-bold">'+poi_name+'</p><img class=img-fluid src="'+img_path+'" style="width:200px;"></img><figcaption class="figure-caption">© '+credits+'</figcaption></figure>';}
         new maplibregl.Popup().setLngLat(e.lngLat).setHTML(description_html).addTo(map16);
     })
     function open_popup16() {
@@ -643,7 +643,7 @@ map16.on('load', async () => {
         let img_path = '../images/punti_di_interesse/POI_BAR2BAR/'+ l[0].properties.POI + '.jpg';
         let credits = l[0].properties.Credits
         if (credits == 'null'){var description_html = '<p class="fw-bold">'+poi_name+'</p>';}
-        if (credits != 'null'){var description_html = '<figure class="figure"><p class="fw-bold">'+poi_name+'</p><img class=img-fluid src="'+img_path+'" style="width:200px;"></img><figcaption class="figure-caption">'+credits+'</figcaption></figure>';}
+        if (credits != 'null'){var description_html = '<figure class="figure"><p class="fw-bold">'+poi_name+'</p><img class=img-fluid src="'+img_path+'" style="width:200px;"></img><figcaption class="figure-caption">© '+credits+'</figcaption></figure>';}
         new maplibregl.Popup().setLngLat(coord).setHTML(description_html).addTo(map16);
     }
     document.getElementById("poi_16_1").addEventListener("click", open_popup16);
@@ -699,7 +699,7 @@ map19.on('load', async () => {
         let img_path = '../images/punti_di_interesse/POI_TERRE DI COPPI/'+ e.features[0].properties.POI + '.jpg';
         let credits = e.features[0].properties.Credits
         if (credits == 'null'){var description_html = '<p class="fw-bold">'+poi_name+'</p>';}
-        if (credits != 'null'){var description_html = '<figure class="figure"><p class="fw-bold">'+poi_name+'</p><img class=img-fluid src="'+img_path+'" style="width:200px;"></img><figcaption class="figure-caption">'+credits+'</figcaption></figure>';}
+        if (credits != 'null'){var description_html = '<figure class="figure"><p class="fw-bold">'+poi_name+'</p><img class=img-fluid src="'+img_path+'" style="width:200px;"></img><figcaption class="figure-caption">© '+credits+'</figcaption></figure>';}
         new maplibregl.Popup().setLngLat(e.lngLat).setHTML(description_html).addTo(map19);
     })
     function open_popup19() {
@@ -710,7 +710,7 @@ map19.on('load', async () => {
         let img_path = '../images/punti_di_interesse/POI_TERRE DI COPPI/'+ l[0].properties.POI + '.jpg';
         let credits = l[0].properties.Credits
         if (credits == 'null'){var description_html = '<p class="fw-bold">'+poi_name+'</p>';}
-        if (credits != 'null'){var description_html = '<figure class="figure"><p class="fw-bold">'+poi_name+'</p><img class=img-fluid src="'+img_path+'" style="width:200px;"></img><figcaption class="figure-caption">'+credits+'</figcaption></figure>';}
+        if (credits != 'null'){var description_html = '<figure class="figure"><p class="fw-bold">'+poi_name+'</p><img class=img-fluid src="'+img_path+'" style="width:200px;"></img><figcaption class="figure-caption">© '+credits+'</figcaption></figure>';}
         new maplibregl.Popup().setLngLat(coord).setHTML(description_html).addTo(map19);
     }
     document.getElementById("poi_19_1").addEventListener("click", open_popup19);
@@ -763,7 +763,7 @@ map20.on('load', async () => {
         let img_path = '../images/punti_di_interesse/POI_TRACCE DEI GHIACCIAI/'+ e.features[0].properties.POI + '.jpg';
         let credits = e.features[0].properties.Credits
         if (credits == 'null'){var description_html = '<p class="fw-bold">'+poi_name+'</p>';}
-        if (credits != 'null'){var description_html = '<figure class="figure"><p class="fw-bold">'+poi_name+'</p><img class=img-fluid src="'+img_path+'" style="width:200px;"></img><figcaption class="figure-caption">'+credits+'</figcaption></figure>';}
+        if (credits != 'null'){var description_html = '<figure class="figure"><p class="fw-bold">'+poi_name+'</p><img class=img-fluid src="'+img_path+'" style="width:200px;"></img><figcaption class="figure-caption">© '+credits+'</figcaption></figure>';}
         new maplibregl.Popup().setLngLat(e.lngLat).setHTML(description_html).addTo(map20);
     })
     function open_popup20() {
@@ -774,7 +774,7 @@ map20.on('load', async () => {
         let img_path = '../images/punti_di_interesse/POI_TRACCE DEI GHIACCIAI/'+ l[0].properties.POI + '.jpg';
         let credits = l[0].properties.Credits
         if (credits == 'null'){var description_html = '<p class="fw-bold">'+poi_name+'</p>';}
-        if (credits != 'null'){var description_html = '<figure class="figure"><p class="fw-bold">'+poi_name+'</p><img class=img-fluid src="'+img_path+'" style="width:200px;"></img><figcaption class="figure-caption">'+credits+'</figcaption></figure>';}
+        if (credits != 'null'){var description_html = '<figure class="figure"><p class="fw-bold">'+poi_name+'</p><img class=img-fluid src="'+img_path+'" style="width:200px;"></img><figcaption class="figure-caption">© '+credits+'</figcaption></figure>';}
         new maplibregl.Popup().setLngLat(coord).setHTML(description_html).addTo(map20);
     }
     document.getElementById("poi_20_1").addEventListener("click", open_popup20);
@@ -831,7 +831,7 @@ map22.on('load', async () => {
         var img_path = '../images/punti_di_interesse/POI_AIDA/'+ e.features[0].properties.POI + '.jpg';
         let credits = e.features[0].properties.Credits
         if (credits == 'null'){var description_html = '<p class="fw-bold">'+poi_name+'</p>';}
-        if (credits != 'null'){var description_html = '<figure class="figure"><p class="fw-bold">'+poi_name+'</p><img class=img-fluid src="'+img_path+'" style="width:200px;"></img><figcaption class="figure-caption">'+credits+'</figcaption></figure>';}
+        if (credits != 'null'){var description_html = '<figure class="figure"><p class="fw-bold">'+poi_name+'</p><img class=img-fluid src="'+img_path+'" style="width:200px;"></img><figcaption class="figure-caption">© '+credits+'</figcaption></figure>';}
         new maplibregl.Popup().setLngLat(e.lngLat).setHTML(description_html).addTo(map22);
     })
     function open_popup22() {
@@ -842,7 +842,7 @@ map22.on('load', async () => {
         let img_path = '../images/punti_di_interesse/POI_AIDA/'+ l[0].properties.POI + '.jpg';
         let credits = l[0].properties.Credits
         if (credits == 'null'){var description_html = '<p class="fw-bold">'+poi_name+'</p>';}
-        if (credits != 'null'){var description_html = '<figure class="figure"><p class="fw-bold">'+poi_name+'</p><img class=img-fluid src="'+img_path+'" style="width:200px;"></img><figcaption class="figure-caption">'+credits+'</figcaption></figure>';}
+        if (credits != 'null'){var description_html = '<figure class="figure"><p class="fw-bold">'+poi_name+'</p><img class=img-fluid src="'+img_path+'" style="width:200px;"></img><figcaption class="figure-caption">© '+credits+'</figcaption></figure>';}
         new maplibregl.Popup().setLngLat(coord).setHTML(description_html).addTo(map22);
     }
     document.getElementById("poi_22_1").addEventListener("click", open_popup22);

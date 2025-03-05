@@ -183,6 +183,19 @@ The toggleSidebar() function removes this class from the element in order to exp
   color: #e30613;
   cursor: pointer;
 }
+.i {
+  padding-right: 5px;
+}
+
+@media screen and (max-width: 767px) {
+.i {
+  padding-right: 0px;
+}}
+
+@media screen and (max-width: 767px) {
+.titolo {
+  margin-top: 30px;
+}}
 
 .accordion-button {
   background-color: #e30613 !important;
@@ -224,13 +237,17 @@ The toggleSidebar() function removes this class from the element in order to exp
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 50%;
-  background: rgba(0, 0, 0, 0.6); /* Sfondo trasparente per leggibilità */
+  width: 60%;
+  background: rgba(0, 0, 0, 0.6);
   color: white;
   text-align: center;
   padding: 5px;
   font-size: 10px;
 }
+@media screen and (max-width: 767px){
+  .figcap {
+    font-size: 7px;
+  }}
 .logcap {
   position: absolute;
   bottom: 0;
